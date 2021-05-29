@@ -3,7 +3,6 @@
     padding-bottom: 80px;
 }
 
-
 .section-aboutus__heading {
     font-size: 48px;
     font-weight: 400;
@@ -19,19 +18,16 @@
     max-width: 1080px;
 }
 
-
 @media(max-width:660px) {
     .section-aboutus {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
     .section-aboutus__heading {
         font-size: 28px;
         line-height: 38px;
         margin-bottom: 20px;
     }
-
     .section-aboutus__desc {
         font-size: 14px;
         line-height: 28px;
