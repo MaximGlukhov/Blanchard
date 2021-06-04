@@ -13,6 +13,7 @@
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
@@ -22,110 +23,186 @@
   <script defer src="js/burger.js"></script>
   <script defer src="js/select.js"></script>
   <script defer src="js/gallery-swiper.js"></script>
+  <script defer src="js/button-search.js"></script>
 </head>
 
 <body>
 
   <header class="header">
     <h1 class="visually-hidden">Blanchard</h1>
-    <div class="container header__container">
-      <button aria-label="Вызов навигационного меню" id="burger" class="header__burger-btn"></button>
-      <a href=""><img class="header__logo" src="img/logo.png" alt="Blanchard, логотип"></a>
-      <nav id="menu" class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav__item">
-            <a class="header__nav__link" href="#aboutus">
-              О нас
-            </a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href="#gallery">
-              Галерея
-            </a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href="">
-              Каталог
-            </a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href="">
-              События
-            </a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href="">
-              Издания
-            </a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href="">
-              Проекты
-            </a>
-          </li>
-          <li class="header__nav__item">
-            <a class="header__nav__link" href="">
-              Контакты
-            </a>
-          </li>
-          <li class="header__nav__item__come">
-            <a class="header__link" href="">
-              Войти
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <a class="header__link__come header__link" href="">
-        Войти
-      </a>
-      <button class="header__btn__search"></button>
+    <div class="header__up">
+      <div class="container header__container">
+        <button aria-label="Вызов навигационного меню" id="burger" class="header__burger-btn"></button>
+        <a href=""><img class="header__logo" src="img/logo.png" alt="Blanchard, логотип"></a>
+        <nav id="menu" class="header__nav">
+          <span id="burger-close" class="closing-cross-burger"></span>
+          <ul class="header__nav__list">
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="#aboutus">
+                О нас
+              </a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="#gallery">
+                Галерея
+              </a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="">
+                Каталог
+              </a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="">
+                События
+              </a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="">
+                Издания
+              </a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="">
+                Проекты
+              </a>
+            </li>
+            <li class="header__nav__item">
+              <a class="header__nav__link" href="">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <button class="header__link header__nav__item__come" href="">
+            Войти
+          </button>
+        </nav>
+        <a class="header__link header__link__come" href="">
+          Войти
+        </a>
+        <button id="btn-search-home" type="button" class="header__btn__search header__btn__search__home"></button>
+        <form id="text" action="" class="header__form">
+          <button id="btn-search" type="button" class="header__btn__search"></button>
+          <input type="" placeholder="" name="" class="header__input">
+          <button id="btn-closed" class="header__form__btn-closed"></button>
+        </form>
+      </div>
     </div>
 
+    <nav class="header__nav-bottom">
+      <div class="header__nav-bottom__container">
+        <ul class="header__nav-bottom__list">
+          <li class="header__nav-bottom__item">
+            <button class="header__nav-bottom__item__btn">
+              Реализм
+            </button>
+            <ul class="header__nav-bottom__sub-menu__list">
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Тинторетто</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Фридрих</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Леонардо</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Верроккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-bottom__item">
+            <button class="header__nav-bottom__item__btn">
+              Импрессионизм
+            </button>
+            <ul class="header__nav-bottom__sub-menu__list">
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Тинторетто</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Фридрих</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Леонардо</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Верроккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-bottom__item">
+            <button class="header__nav-bottom__item__btn">
+              Постимпрессионизм
+            </button>
+            <ul class="header__nav-bottom__sub-menu__list">
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Тинторетто</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Фридрих</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Леонардо</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Верроккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-bottom__item">
+            <button class="header__nav-bottom__item__btn">
+              Авангард
+            </button>
+            <ul class="header__nav-bottom__sub-menu__list">
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Тинторетто</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href=""> Фридрих</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Леонардо</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Верроккьо</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-bottom__item">
+            <button class="header__nav-bottom__item__btn">
+              Футуризм
+            </button>
+            <ul class="header__nav-bottom__sub-menu__list">
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Тинторетто</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Фридрих</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Леонардо</a>
+              </li>
+              <li class="header__nav-bottom__sub-menu__item">
+                <a class="header__nav-bottom__sub-menu__item__link" href="">Верроккьо</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class="header__nav-bottom__form" action="https://jsonplaceholder.typicode.com/posts">
+          <button type="submit" class="header__nav-bottom__form__btn"></button>
+          <input type="search" name="Search" placeholder="Поиск по сайту" class="header__nav-bottom__form__input">
+        </form>
+      </div>
+    </nav>
   </header>
 
   <main>
     <section class="section-hero">
-      <div class="section-hero__wrap-up">
-        <div class="container__section-hero__up">
-          <ul class="section-hero__list">
-            <li class="section-hero__item">
-              <button class="section-hero__item__btn">
-                Реализм
-              </button>
-            </li>
-            <li class="section-hero__item">
-              <button class="section-hero__item__btn">
-                Импрессионизм
-              </button>
-            </li>
-            <li class="section-hero__item">
-              <button class="section-hero__item__btn">
-                Постимпрессионизм
-              </button>
-            </li>
-            <li class="section-hero__item">
-              <button class="section-hero__item__btn">
-                Авангард
-              </button>
-            </li>
-            <li class="section-hero__item">
-              <button class="section-hero__item__btn">
-                Футуризм
-              </button>
-            </li>
-          </ul>
-          <form class="section-hero__form" action="https://jsonplaceholder.typicode.com/posts">
-            <label>
-              <button type="submit" class="section-hero__form__btn"></button>
-              <input type="search" name="Search" placeholder="Поиск по сайту" class="section-hero__form__input">
-            </label>
-          </form>
-        </div>
-      </div>
+
       <div class="container">
         <div class="section-hero__box">
           <div class="section-hero__content">
-            <h2 class="sectiom-hero__content__subtitle">
+            <h2 class="sectiom-hero__content__heading">
               Прикоснитесь к прекрасному
             </h2>
             <p class="section-hero__content__desc">
