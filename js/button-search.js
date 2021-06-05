@@ -12,9 +12,10 @@ window.addEventListener('DOMContentLoaded', function() {
     })
   })
 
-  window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#btn-closed').addEventListener('click', function() {
         document.querySelector('#text').classList.remove('active-text')
+        document.querySelector('#btn-search-home').classList.remove('btn-none')
     })
   })
 
