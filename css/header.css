@@ -215,14 +215,33 @@
 
 .header__nav-bottom__sub-menu__list {
   position: absolute;
-  opacity: 0;;
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  right: 0;
   left: 0;
   padding: 40px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.simplebar-content-wrapper {
+  overflow: auto;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 2px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.simplebar-scrollbar::before {
+  width: 2px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .header__nav-bottom__sub-menu__item {
   width: 220px;
+  height: 40px;
   padding: 9px 0 12px 14px;
   font-size: 14px;
   font-weight: 600;
