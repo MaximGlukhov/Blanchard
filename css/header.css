@@ -224,6 +224,11 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.header__nav-bottom__item__btn:active ~ .header__nav-bottom__sub-menu__list,
+.header__nav-bottom__item__btn:focus ~ .header__nav-bottom__sub-menu__list {
+  opacity: 1;
+}
+
 .simplebar-content-wrapper {
   overflow: auto;
 }
@@ -248,6 +253,22 @@
   cursor: pointer;
 }
 
+.header__nav-bottom__sub-menu__item_tintoretto {
+  background-image: url('../img/header-tintorento.png');
+}
+
+.header__nav-bottom__sub-menu__item_phridrih {
+  background-image: url('../img/header-phridrih.png');
+}
+
+.header__nav-bottom__sub-menu__item_leonardo {
+  background-image: url('../img/header-leonardo.png');
+}
+
+.header__nav-bottom__sub-menu__item_verokko {
+  background-image: url('../img/verokko.png');
+}
+
 .header__nav-bottom__sub-menu__item__link {
   color: rgba(255, 255, 255, 1);
 }
@@ -266,10 +287,7 @@
   margin-bottom: 20px;
 }
 
-.header__nav-bottom__item__btn:active ~ .header__nav-bottom__sub-menu__list,
-.header__nav-bottom__item__btn:focus ~ .header__nav-bottom__sub-menu__list {
-  opacity: 1;
-}
+
 
 @media(max-width: 1912px) {
   .header__logo {
