@@ -217,16 +217,17 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  opacity: 0;
+  display: none;
+  margin-top: 45px;
   right: 0;
   left: 0;
   padding: 40px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header__nav-bottom__item__btn:active ~ .header__nav-bottom__sub-menu__list,
 .header__nav-bottom__item__btn:focus ~ .header__nav-bottom__sub-menu__list {
-  opacity: 1;
+  display: inline-block;
 }
 
 .simplebar-content-wrapper {
@@ -266,7 +267,71 @@
 }
 
 .header__nav-bottom__sub-menu__item_verokko {
-  background-image: url('../img/verokko.png');
+  background-image: url('../img/header-verokko.png');
+}
+
+.header__nav-bottom__sub-menu__item_mone {
+  background-image: url('../img/header-mone.png');
+}
+
+.header__nav-bottom__sub-menu__item_sisley {
+  background-image: url('../img/header-sisley.png');
+}
+
+.header__nav-bottom__sub-menu__item_mane {
+  background-image: url('../img/header-mane.png');
+}
+
+.header__nav-bottom__sub-menu__item_renuar {
+  background-image: url('../img/header-renuar.png');
+}
+
+.header__nav-bottom__sub-menu__item_vangog {
+  background-image: url('../img/header-vangog.png');
+}
+
+.header__nav-bottom__sub-menu__item_sesann {
+  background-image: url('../img/header-sesann.png');
+}
+
+.header__nav-bottom__sub-menu__item_gogen {
+  background-image: url('../img/header-gogen.png');
+}
+
+.header__nav-bottom__sub-menu__item_sera {
+  background-image: url('../img/header-sera.png');
+}
+
+.header__nav-bottom__sub-menu__item_kadinskiy{
+  background-image: url('../img/header-kadinskiy.png');
+}
+
+.header__nav-bottom__sub-menu__item_marinetti {
+  background-image: url('../img/header-marinetti.png');
+}
+
+.header__nav-bottom__sub-menu__item_malevich {
+  background-image: url('../img/header-malevich.png');
+}
+
+.header__nav-bottom__sub-menu__item_picasso {
+  background-image: url('../img/header-picasso.png');
+}
+
+.header__nav-bottom__sub-menu__item_karra {
+  background-image: url('../img/header-kara.png');
+}
+
+.header__nav-bottom__sub-menu__item_pratella {
+  background-image: url('../img/header-pratella.png');
+}
+
+.header__nav-bottom__sub-menu__item_severini {
+  background-image: url('../img/header-severini.png');
+}
+
+.header__nav-bottom__sub-menu__item_bala {
+  background-image: url('../img/header-balapng.png');
 }
 
 .header__nav-bottom__sub-menu__item__link {
