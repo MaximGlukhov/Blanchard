@@ -12,6 +12,8 @@
   <script src="js/libs/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/libs/simplebar.css">
   <script defer src="js/libs/simplebar.min.js"></script>
+  <script defer src="js/libs/jquery-3.6.0.min.js"></script>
+  <script defer src="js/libs/jquery-ui.js"></script>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -22,10 +24,14 @@
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/aboutus.css">
   <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/catalog.css">
   <script defer src="js/burger.js"></script>
   <script defer src="js/select.js"></script>
   <script defer src="js/gallery-swiper.js"></script>
   <script defer src="js/button-search.js"></script>
+  <script defer src="js/catalog-accordeon.js"></script>
+  <script defer src="js/catalog-tabs.js"></script>
+  <script defer src="js/flags.js"></script>
 </head>
 
 <body>
@@ -50,7 +56,7 @@
               </a>
             </li>
             <li class="header__nav__item">
-              <a class="header__nav__link" href="">
+              <a class="header__nav__link" href="#catalog">
                 Каталог
               </a>
             </li>
@@ -98,7 +104,7 @@
             <button class="header__nav-bottom__item__btn">
               Реализм
             </button>
-            <ul class="header__nav-bottom__sub-menu__list"  data-simplebar>
+            <ul class="header__nav-bottom__sub-menu__list" data-simplebar>
               <li class="header__nav-bottom__sub-menu__item header__nav-bottom__sub-menu__item_tintoretto">
                 <a class="header__nav-bottom__sub-menu__item__link" href="">Тинторетто</a>
               </li>
@@ -221,7 +227,7 @@
 
     <section id="aboutus" class="section-aboutus">
       <div class="container">
-        <h2 class="section-aboutus__heading">
+        <h2 class="section-aboutus__heading heading">
           О нас
         </h2>
         <p class="section-aboutus__desc">
@@ -358,13 +364,332 @@
                   <img src="img/pic-18.jpg" alt="">
                 </div>
               </div>
-
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-19.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-20.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-21.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-22.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-23.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-24.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-25.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-26.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-27.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-28.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-29.jpg" alt="">
+                </div>
+              </div>
+              <div class="section-gallery__slide swiper-slide">
+                <div class="section-gallery__img">
+                  <img src="img/pic-30.jpg" alt="">
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
+    </section>
 
+    <section id="catalog" class="section-catalog">
+      <div class="container">
+        <div class="section-catalog__up-wrap">
+          <h2 class="section-catalog__heading heading">
+            Каталог
+          </h2>
+
+          <ul class="section-catalog__list-tabs">
+            <li class="section-catalog__item-tabs">
+              <button
+                class="section-catalog__item-tabs__btn section-catalog__item-tabs__btn__france tabs-flag tabs-flag-active" data-target="flag-one"></button>
+            </li>
+            <li class="section-catalog__item-tabs">
+              <button
+                class="section-catalog__item-tabs__btn section-catalog__item-tabs__btn__germany tabs-flag" data-target="flag-two"></button>
+            </li>
+            <li class="section-catalog__item-tabs">
+              <button
+                class="flag-btn flag-reset section-catalog__item-tabs__btn section-catalog__item-tabs__btn__italy tabs-flag" data-target="flag-three"></button>
+            </li>
+            <li class="section-catalog__item-tabs">
+              <button
+                class="section-catalog__item-tabs__btn section-catalog__item-tabs__btn__russia tabs-flag" data-target="flag-four"></button>
+            </li>
+            <li class="section-catalog__item-tabs">
+              <button
+                class="section-catalog__item-tabs__btn section-catalog__item-tabs__btn__belgium tabs-flag" data-target="flag-five"></button>
+            </li>
+          </ul>
+
+        </div>
+        <div class="section-catalog__desc">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
+          частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются
+          уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+        </div>
+
+        <div class="section-catalog__bottom-wrap">
+          <article class="painter tab-content tab-content-active" data-target="one">
+            <picture>
+              <source srcset="img/domeniko-girlandayo.jpg 2x, img/domeniko-girlandayo.jpg 1x">
+              <img class="painter__photo" src="img/domeniko-girlandayo.jpg" alt="Художник, Доменико Гирландайо">
+            </picture>
+            <h3 class="painter__title">
+              Доменико Гирландайо
+            </h3>
+            <p class="painter__desc_years">2 июня 1448 — 11 января 1494.</p>
+            <p class="painter__desc">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили
+              его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года
+              овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
+              подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане
+              Флоренции
+              в костюмах того времени).
+            </p>
+          </article>
+
+          <article class="painter tab-content" data-target="two">
+            <img class="painter__photo" src="img/painter-x.jpg" alt="Неизвестный художник">
+            <h3 class="painter__title">
+              Что мы о нём знаем?
+            </h3>
+            <p class="painter__desc">
+              Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+            </p>
+            <a class="painter__link" href="#gallery">В галерею</a>
+          </article>
+
+          <ul id="accordion" class="section-catalog__list-accordeon">
+            <li class="section-catalog__item-accordeon">
+              <button class="section-catalog__item-accordeon__btn">C 1400 по 1499 гг.</button>
+              <div class="section-catalog__item-accordeon__desc">
+
+
+                <ul class="section-catalog__item-accordeon__desc_list">
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn"
+                      data-path="two">Бенедетто ди Биндо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn"
+                      data-path="two">Бергоньоне, Амброджо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn"
+                      data-path="two">Биссоло, Франческо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn"
+                      data-path="two">Больтраффио, Джованни</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Бонсиньори, Франческо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Боттичини, Рафаэлло</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Брамантино</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Бреа, Людовик</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Бьяджо д’Антонио Туччи</button>
+                  </li>
+
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn"
+                      data-path="two">Веккьетта</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Андреа Верроккьо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn  tabs__btn__active"
+                      data-path="one">
+                      Доменико Гирландайо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Беноццо Гоццоли</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Граначчи, Франческо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Грегорио ди Чекко</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-gallery__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Джованни да Удине</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Джованни ди Паоло</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Джорджоне</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn"
+                      data-path="two">Парентино, Бернардо</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Пезеллино</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Пьетро Перуджино</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Перуцци, Бальдассар</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Пизанелло</button>
+                  </li>
+                  <li class="section-catalog__item-accordeon__desc_item">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
+                      Пинтуриккьо</button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="section-catalog__item-accordeon">
+              <button class="section-catalog__item-accordeon__btn">C 1500 по 1599 гг.</button>
+              <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
+                <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
+                <div class="section-catalog__item-accordeon__desc_unkown__wrap">
+                  <p class="section-catalog__item-accordeon__desc_subtitle">Здесь пока пусто</p>
+                  <p class="section-catalog__item-accordeon__desc_unkown_desc">А в галерее вы всегда можете найти что-то
+                    интересное
+                    для себя</p>
+                  <a href="#gallery" class="section-catalog__item-accordeon__desc__link">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="section-catalog__item-accordeon">
+              <button class="section-catalog__item-accordeon__btn">C 1600 по 1699 гг..</button>
+              <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
+                <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
+                <div class="section-catalog__item-accordeon__desc_unkown__wrap">
+                  <p class="section-catalog__item-accordeon__desc_subtitle">Здесь пока пусто</p>
+                  <p class="section-catalog__item-accordeon__desc_unkown_desc">А в галерее вы всегда можете найти что-то
+                    интересное
+                    для себя</p>
+                  <a href="#gallery" class="section-catalog__item-accordeon__desc__link">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="section-catalog__item-accordeon">
+              <button class="section-catalog__item-accordeon__btn">C 1700 по 1799 гг.</button>
+              <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
+                <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
+                <div class="section-catalog__item-accordeon__desc_unkown__wrap">
+                  <p class="section-catalog__item-accordeon__desc_subtitle">Здесь пока пусто</p>
+                  <p class="section-catalog__item-accordeon__desc_unkown_desc">А в галерее вы всегда можете найти что-то
+                    интересное
+                    для себя</p>
+                  <a href="#gallery" class="section-catalog__item-accordeon__desc__link">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="section-catalog__item-accordeon">
+              <button class="section-catalog__item-accordeon__btn">C 1800 по 1899 гг..</button>
+              <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
+                <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
+                <div class="section-catalog__item-accordeon__desc_unkown__wrap">
+                  <p class="section-catalog__item-accordeon__desc_subtitle">Здесь пока пусто</p>
+                  <p class="section-catalog__item-accordeon__desc_unkown_desc">А в галерее вы всегда можете найти что-то
+                    интересное
+                    для себя</p>
+                  <a href="#gallery" class="section-catalog__item-accordeon__desc__link">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="section-catalog__item-accordeon">
+              <button class="section-catalog__item-accordeon__btn">C 1900 по 1999 гг.</button>
+              <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
+                <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
+                <div class="section-catalog__item-accordeon__desc_unkown__wrap">
+                  <p class="section-catalog__item-accordeon__desc_subtitle">Здесь пока пусто</p>
+                  <p class="section-catalog__item-accordeon__desc_unkown_desc">А в галерее вы всегда можете найти что-то
+                    интересное
+                    для себя</p>
+                  <a href="#gallery" class="section-catalog__item-accordeon__desc__link">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="section-catalog__item-accordeon">
+              <button class="section-catalog__item-accordeon__btn">C 2000 г.</button>
+              <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
+                <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
+                <div class="section-catalog__item-accordeon__desc_unkown__wrap">
+                  <p class="section-catalog__item-accordeon__desc_subtitle">Здесь пока пусто</p>
+                  <p class="section-catalog__item-accordeon__desc_unkown_desc">А в галерее вы всегда можете найти что-то
+                    интересное
+                    для себя</p>
+                  <a href="#gallery" class="section-catalog__item-accordeon__desc__link">В галерею</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
   </main>

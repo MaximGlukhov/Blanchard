@@ -64,13 +64,12 @@
 }
 
 .section-hero__content__btn:hover {
-  box-shadow: inset 0 0 0 3px #D1A9F0;
+  box-shadow: inset 0 0 0 2px #D1A9F0;
 }
 
 .section-hero__content__btn:focus {
-  box-shadow: inset 0 0 0 2px white;
-  outline: none;
-  border: 2px solid #C283F3;
+  box-shadow: inset 0 0 0 3px white,
+              0 0 0 2px #C283F3;
 }
 
 .section-hero__content__btn:active {
