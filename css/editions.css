@@ -36,6 +36,7 @@
 }
 
 .section-editions__category__label {
+    position: relative;
     cursor: pointer;
     padding-left: 24px;
 }
@@ -338,6 +339,10 @@
 }
 
 @media(max-width: 767px) {
+    .section-editions {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
     .section-editions__swiper-box {
         display: none;
     }
@@ -371,6 +376,9 @@
         margin: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         padding: 13px 0 13px 0;
+    }
+    .section-editions__category-checkbox-item.edition-spoiler-active {
+        display: block;
     }
     .section-editions__category__label {
         position: static;
