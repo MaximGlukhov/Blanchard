@@ -216,7 +216,7 @@
 }
 
 .section-catalog__item-accordeon__desc_item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-bottom: 15px;
 }
 
 .section-catalog__item-accordeon__desc__btn {
@@ -224,6 +224,7 @@
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     text-align: left;
+    transition: color .2s ease;
 }
 
 .section-catalog__item-accordeon__desc__btn:hover {
@@ -231,7 +232,9 @@
 }
 
 .section-catalog__item-accordeon__desc__btn:focus {
-    outline: 1px solid rgba(157, 92, 208, 1);
+    outline: none;
+    background-color: rgba(157, 92, 208, 1);
+    color: white;
 }
 
 .section-catalog__item-accordeon__desc__btn:active {

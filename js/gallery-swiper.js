@@ -1,21 +1,22 @@
-const swiper = new Swiper('.section-gallery__swiper', {
+const gallerySwiper = new Swiper('.section-gallery__swiper', {
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.section-gallery__panigation',
       type: 'fraction',
     },
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next-new',
-      prevEl: '.swiper-button-prev-new',
+      nextEl: '.gallery-swiper-button-next-new',
+      prevEl: '.gallery-swiper-button-prev-new',
     },
-    autoHeight: false,
+    
     
     breakpoints: {
       320: {
         slidesPerView: 1,
       },
+   
    
       661: {
         slidesPerView: 2,

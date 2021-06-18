@@ -68,6 +68,7 @@
 }
 
 .section-hero__content__btn:focus {
+  outline: none;
   box-shadow: inset 0 0 0 3px white,
               0 0 0 2px #C283F3;
 }
