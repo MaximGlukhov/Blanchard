@@ -73,6 +73,23 @@
     color: rgba(157, 92, 208, 1);
 }
 
+.section-contacts__form__btn:hover {
+    background-color: rgba(157, 92, 208, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-contacts__form__btn:focus {
+    outline: none;
+    border: 4px double #9D5CD0;
+}
+
+.section-contacts__form__btn:active {
+    background-color: rgba(121, 67, 164, 1);
+    color: #fff;
+    border: transparent;
+    box-shadow: 0 0 0 2px #D1A9F0 inset;
+}
+
 .section-contacts__title {
     font-size: 24px;
     font-weight: 400;
