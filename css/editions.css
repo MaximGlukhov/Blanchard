@@ -206,10 +206,6 @@
     max-width: 1150px;
 }
 
-.section-editions__slide {
-    max-width: 350px;
-}
-
 .edition {
     box-sizing: border-box;
     width: 350px;
@@ -287,10 +283,7 @@
 
 @media(max-width: 1300px) {
     .section-editions__swiper-container {
-        max-width: 629px;
-    }
-    .section-editions__slide {
-        max-width: 290px;
+        max-width: 615px;
     }
     .edition {
         width: 100%;

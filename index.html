@@ -14,6 +14,10 @@
   <script defer src="js/libs/simplebar.min.js"></script>
   <script defer src="js/libs/jquery-3.6.0.min.js"></script>
   <script defer src="js/libs/jquery-ui.js"></script>
+  <script defer src="js/libs/popper.min.js"></script>
+  <script defer src="js/libs/tippy-bundle.umd.js"></script>
+  <script defer src="js/libs/inputmask.min.js"></script>
+  <script defer src="js/libs/just-validate.min.js"></script>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -27,6 +31,9 @@
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/editions.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/footer.css">
   <script defer src="js/burger.js"></script>
   <script defer src="js/select.js"></script>
   <script defer src="js/gallery-swiper.js"></script>
@@ -38,6 +45,11 @@
   <script defer src="js/events-swiper.js"></script>
   <script defer src="js/edition-swiper.js"></script>
   <script defer src="js/edition-spoiler.js"></script>
+  <script defer src="js/projects-swiper.js"></script>
+  <script defer src="js/tooltip.js"></script>
+  <script defer src="js/form.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script defer src="js/maps.js"></script>
 </head>
 
 <body>
@@ -72,17 +84,17 @@
               </a>
             </li>
             <li class="header__nav__item">
-              <a class="header__nav__link" href="">
+              <a class="header__nav__link" href="#editions">
                 Издания
               </a>
             </li>
             <li class="header__nav__item">
-              <a class="header__nav__link" href="">
+              <a class="header__nav__link" href="#projects">
                 Проекты
               </a>
             </li>
             <li class="header__nav__item">
-              <a class="header__nav__link" href="">
+              <a class="header__nav__link" href="#contacts">
                 Контакты
               </a>
             </li>
@@ -700,14 +712,14 @@
       </div>
     </section>
 
-    <section class="section-events">
+    <section id="events" class="section-events">
       <div class="container">
         <h2 class="heading section-events__heading">
           События
         </h2>
 
 
-        <ul id="events" class="section-events__list">
+        <ul class="section-events__list">
           <li class="section-events__item">
             <article class="events events-engraving">
               <p class="events__event-name">
@@ -927,7 +939,7 @@
       </div>
     </section>
 
-    <section class="section-editions">
+    <section id="editions" class="section-editions">
       <div class="container section-editions__container">
         <div class="section-editions__left-wrap">
           <h2 class="section-editions__heading heading">
@@ -1311,7 +1323,7 @@
       </div>
     </section>
 
-    <section class="section-projects">
+    <section id="projects" class="section-projects">
       <div class="container">
         <h2 class="heading section-projects__heading">
           Проекты
@@ -1320,20 +1332,115 @@
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
           фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
           уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-          Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует
+          Прежде всего, постоянное информационно-пропагандистское<span id="tooltip-one"
+            class="section-pojects__desc__icon"></span>обеспечение нашей деятельности однозначно фиксирует
           необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
-          оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но
+          оппозиции могут быть рассмотрены<span id="tooltip-two" class="section-pojects__desc__icon"></span>исключительно в разрезе
+          маркетинговых и финансовых<span id="tooltip-three" class="section-pojects__desc__icon"></span>предпосылок.
+          Банальные, но
           неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
           которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
-          Подробнее: blanchard-art.ru/projects/about
+          Подробнее: <a class="section-projects__desc__link" href="">blanchard-art.ru/projects/about</a>
         </p>
 
+        <h3 class="section-projects__subtitle">
+          Партнёры проектов:
+        </h3>
+
+        <div class="section-projects__swiper-box">
+          <div class="section-projects__swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-workhouse.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-freelands.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-institute.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-1849.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-camden.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-watts.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-hiscox.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-stassen.jpg" alt="">
+              </div>
+              <div class="section-projects__slide swiper-slide">
+                <img class="section-projects__slide-img" src="img/projects-esad.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="section-projects-button-prev"></div>
+          <div class="section-projects-button-next"></div>
+        </div>
       </div>
+    </section>
+    
+    <section id="contacts" class="section-contacts">
+      <div class="container section-contacts__container">
+        <h2 class="heading section-contacts__heading">
+          Контакты
+        </h2>
+      
+
+      <div class="section-contacts__wrap-form">
+        <div class="section-contacts__wrap-adress">
+        <p class="section-contacts__name-market">
+          Шоурум №4 
+        </p>
+        <p class="section-contacts__adress">
+          Леонтьевский переулок, дом 5/1
+        </p>
+      </div>
+        <form class="section-contacts__form">
+          <h3 class="section-contacts__form__title">
+            Заказать обратный звонок
+          </h3>
+          <input required type="text" placeholder="Имя*" class="section-form__input" data-validate-field="name">
+          <input required type="tel" placeholder="Телефон*" class="section-form__input" data-validate-field="tel">
+          <button class="section-contacts__form__btn">Заказать</button>
+        </form>
+        <h3 class="section-contacts__title">
+          Связаться в один клик
+        </h3>
+        <ul class="section-contacts__social-list">
+          <li class="section-contacts__social-items">
+            <a class="section-contacts-social whatsapp" href=""></a>
+          </li>
+          <li class="section-contacts__social-items">
+            <a class="section-contacts-social telegram" href=""></a>
+          </li>
+        </ul>
+      </div>
+      <div class="myMap1" id="myMap1"></div>
+    </div>
     </section>
   </main>
 
-  <footer>
-
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="" class="footer__logo-link"><img class="footer__logo-img" src="img/logo.png" alt="Blanchard, логотип"></a>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link vk-icon"></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link insta-icon"></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="" class="footer__social-link facebook-icon"></a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
 </body>
