@@ -155,6 +155,7 @@
 
 .header__nav-bottom__item__btn:focus {
   background-color:  rgba(157, 92, 208, 1);
+  color: #fff;
   outline: none;
 }
 

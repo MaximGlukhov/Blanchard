@@ -152,6 +152,7 @@
 
 .section-contacts-social:focus,
 .section-contacts-social:hover {
+    outline: none;
     opacity: .5;
 }
 
