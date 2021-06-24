@@ -18,6 +18,7 @@
   <script defer src="js/libs/tippy-bundle.umd.js"></script>
   <script defer src="js/libs/inputmask.min.js"></script>
   <script defer src="js/libs/just-validate.min.js"></script>
+  <link rel="stylesheet" href="css/libs/justValidateTooltip.css">
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/open-sans-v20-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -270,9 +271,9 @@
 
           <p class="section-gallery__subtitle-for-select">Фильтровать по:</p>
           <select name="select">
-            <option value="">Автор</option>
-            <option value="">Направление</option>
-            <option value="">Техника</option>
+            <option value="">Живопись</option>
+            <option value="">Рисунок</option>
+            <option value="">Скульптура</option>
           </select>
           <div class="section-gallery__note">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
@@ -824,7 +825,7 @@
             </article>
           </li>
         </ul>
-        <button class="section-catalog__btn">Все события</button>
+        <button class="section-events__btn">Все события</button>
 
         <div class="section-events__swiper-box">
           <div class="section-events-swiper swiper-container">
@@ -1332,11 +1333,12 @@
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
           фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
           уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-          Прежде всего, постоянное информационно-пропагандистское<span id="tooltip-one"
-            class="section-pojects__desc__icon"></span>обеспечение нашей деятельности однозначно фиксирует
+          Прежде всего, постоянное информационно-пропагандистское <span id="tooltip-one"
+            class="section-pojects__desc__icon"></span> обеспечение нашей деятельности однозначно фиксирует
           необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
-          оппозиции могут быть рассмотрены<span id="tooltip-two" class="section-pojects__desc__icon"></span>исключительно в разрезе
-          маркетинговых и финансовых<span id="tooltip-three" class="section-pojects__desc__icon"></span>предпосылок.
+          оппозиции могут быть рассмотрены <span id="tooltip-two"
+            class="section-pojects__desc__icon"></span> исключительно в разрезе
+          маркетинговых и финансовых <span id="tooltip-three" class="section-pojects__desc__icon"></span> предпосылок.
           Банальные, но
           неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
           которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
@@ -1384,51 +1386,58 @@
         </div>
       </div>
     </section>
-    
+
     <section id="contacts" class="section-contacts">
       <div class="container section-contacts__container">
         <h2 class="heading section-contacts__heading">
           Контакты
         </h2>
-      
 
-      <div class="section-contacts__wrap-form">
-        <div class="section-contacts__wrap-adress">
-        <p class="section-contacts__name-market">
-          Шоурум №4 
-        </p>
-        <p class="section-contacts__adress">
-          Леонтьевский переулок, дом 5/1
-        </p>
-      </div>
-        <form class="section-contacts__form">
-          <h3 class="section-contacts__form__title">
-            Заказать обратный звонок
+
+        <div class="section-contacts__wrap-form">
+          <div class="section-contacts__wrap-adress">
+            <p class="section-contacts__name-market">
+              Шоурум №4
+            </p>
+            <p class="section-contacts__adress">
+              Леонтьевский переулок, дом 5/1
+            </p>
+          </div>
+          <form class="section-contacts__form">
+            <h3 class="section-contacts__form__title">
+              Заказать обратный звонок
+            </h3>
+            <div class="just-validate-tooltip-container">
+            <input required type="text" placeholder="Имя*"
+              class="section-contacts__form__input section-contacts__form__input_name" data-validate-field="name">
+            </div>
+            <div class="just-validate-tooltip-container">
+            <input required type="tel" placeholder="Телефон*"
+              class="section-contacts__form__input section-contacts__form__input_tel" data-validate-field="tel">
+            </div>
+            <button class="section-contacts__form__btn">Заказать</button>
+          </form>
+          <h3 class="section-contacts__title">
+            Связаться в один клик
           </h3>
-          <input required type="text" placeholder="Имя*" class="section-form__input" data-validate-field="name">
-          <input required type="tel" placeholder="Телефон*" class="section-form__input" data-validate-field="tel">
-          <button class="section-contacts__form__btn">Заказать</button>
-        </form>
-        <h3 class="section-contacts__title">
-          Связаться в один клик
-        </h3>
-        <ul class="section-contacts__social-list">
-          <li class="section-contacts__social-items">
-            <a class="section-contacts-social whatsapp" href=""></a>
-          </li>
-          <li class="section-contacts__social-items">
-            <a class="section-contacts-social telegram" href=""></a>
-          </li>
-        </ul>
+          <ul class="section-contacts__social-list">
+            <li class="section-contacts__social-items">
+              <a class="section-contacts-social whatsapp" href=""></a>
+            </li>
+            <li class="section-contacts__social-items">
+              <a class="section-contacts-social telegram" href=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="myMap1" id="myMap1"></div>
       </div>
-      <div class="myMap1" id="myMap1"></div>
-    </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__container">
-      <a href="#header" class="footer__logo-link"><img class="footer__logo-img" src="img/logo.png" alt="Blanchard, логотип"></a>
+      <a href="#header" class="footer__logo-link"><img class="footer__logo-img" src="img/logo.png"
+          alt="Blanchard, логотип"></a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a href="" class="footer__social-link vk-icon"></a>

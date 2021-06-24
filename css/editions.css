@@ -42,7 +42,11 @@
 }
 
 .section-editions__category-checbox__input {
-    display: none;
+    opacity: 0;
+}
+
+.section-editions__category-checbox__input:focus ~ .section-editions__category-checbox__text {
+    outline: 1px solid var(--purple);
 }
 
 .section-editions__category-checbox__icon {
@@ -124,6 +128,22 @@
     border: none;
     background: rgba(157, 92, 208, 0.5);
     outline: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-editions__price__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-editions__price__input::-moz-placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-editions__price__input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-editions__price__input::-ms-input-placeholder {
     color: rgba(255, 255, 255, 1);
 }
 

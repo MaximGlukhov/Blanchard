@@ -19,8 +19,6 @@
     padding: 115px 122px 124px 0;
 }
 
-
-
 .section-contacts__name-market {
     font-size: 24px;
     font-weight: 600;
@@ -42,19 +40,56 @@
     margin-bottom: 38px;
 }
 
-.section-contacts__form__title{
+.section-contacts__form__title{  
     font-size: 24px;
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     margin-bottom: 19px;
 }
 
-.section-form__input {
+.js-validate-error-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(209, 22, 22, 1);
+}
+
+.section-contacts__form__input {
+    cursor: pointer;
+    width: 100%;
     outline: none;
     padding: 10px 0 10px 24px;
     border: 1px solid #333333;
     border-radius: 100px;
     margin-bottom: 23px;
+}
+
+.section-contacts__form__input:hover,
+.section-contacts__form__input:focus {
+    background: rgba(234, 234, 234, 1);
+}
+
+.section-form__input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.section-form__input::-moz-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.section-form__input:-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
+
+.section-form__input::-ms-input-placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
 }
 
 .section-form__input::placeholder {
@@ -64,6 +99,7 @@
 }
 
 .section-contacts__form__btn {
+    order: 5;
     width: 157px;
     height: 59px;
     font-size: 18px;
@@ -109,8 +145,19 @@
     display: inline-block;
     width: 40px;
     height: 40px;
+    border-radius: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.section-contacts-social:focus,
+.section-contacts-social:hover {
+    opacity: .5;
+}
+
+.section-contacts-social:active {
+    border: 1px solid var(--purple);
+    opacity: 1;
 }
 
 .whatsapp {
@@ -129,7 +176,8 @@
 }
   
   [class*="ground-pane"] {
-    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
   }
   
   @media(max-width:1024px) {

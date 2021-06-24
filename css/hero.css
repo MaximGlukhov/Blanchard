@@ -13,7 +13,20 @@
   background-image: url('../img/hero.png');
   background-size: cover;
   z-index: -1;
-  animation: anim 14s linear infinite;
+  -webkit-animation: anim 14s linear infinite;
+          animation: anim 14s linear infinite;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes anim {
