@@ -179,6 +179,10 @@
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
   }
+
+  .ymaps-2-1-78-image {
+      background-image: url('../img/maps-icon.svg');
+  }
   
   @media(max-width:1024px) {
     .section-contacts__wrap-form {
