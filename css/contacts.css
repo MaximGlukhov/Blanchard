@@ -53,12 +53,6 @@
     margin-bottom: 19px;
 }
 
-.js-validate-error-label {
-    font-size: 12px;
-    font-weight: 400;
-    color: rgba(209, 22, 22, 1);
-}
-
 .section-contacts__form__input {
     cursor: pointer;
     width: 100%;

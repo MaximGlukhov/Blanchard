@@ -28,7 +28,8 @@
   z-index: 10;
   background: none;
   padding: 4px 8px;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 400;
   pointer-events: none;
   transition: all .4s linear; 
 }
