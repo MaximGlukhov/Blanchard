@@ -1,22 +1,12 @@
-.section-contacts {
+.section-contacts__content {
+    position: relative;
+    padding-top: 118px;
+    padding-bottom: 124px;
     border-top: 1px solid #CACACA;
 }
 
-.section-contacts__container {
-    position: relative;
-    display: flex;
-    padding-right: 0;
-}
-
 .section-contacts__heading {
-    position: absolute;
-    bottom: 100%;
     margin-bottom: 30px;
-}
-
-.section-contacts__wrap-form {
-    max-width: 540px;
-    padding: 115px 122px 124px 0;
 }
 
 .section-contacts__name-market {
@@ -27,16 +17,32 @@
 }
 
 .section-contacts__adress {
+    font-style: normal;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 35px;
     color: #333333;
 }
 
+.map {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    border-left: 1px solid #CACACA;
+    width: 64%;
+    height: 100%;
+    z-index: 2;
+}
+  
+  [class*="ground-pane"] {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
+
 .section-contacts__form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     margin-bottom: 38px;
 }
 
@@ -99,7 +105,6 @@
 }
 
 .section-contacts__form__btn {
-    order: 5;
     width: 157px;
     height: 59px;
     font-size: 18px;
@@ -168,37 +173,26 @@
 .telegram {
     background-image: url('../img/telegram.svg');
 }
-
-.myMap1 {
-    width: 100%;
-    height: 699px;
-    margin-top: -1px;
-    margin-bottom: 1px;
-}
   
-  [class*="ground-pane"] {
-    -webkit-filter: grayscale(1);
-            filter: grayscale(1);
-  }
-
-  .ymaps-2-1-78-image {
-      background-image: url('../img/maps-icon.svg');
-  }
-  
-  @media(max-width:1024px) {
-    .section-contacts__wrap-form {
-        max-width: 645px;
-        padding: 115px 105px 100px 0;
+  @media(max-width:1280px) {
+    .section-contacts__heading {
+        margin-bottom: 25px;
+    }
+    .section-contacts__content {
+        padding-top: 124px;
+        padding-bottom: 100px;
+    }
+    .map {
+        width: 52%;
+    }
+    .section-contacts__form {
+        max-width: 335px;
     }
     .section-contacts__name-market {
         margin-bottom: 15px;
     }
     .section-contacts__adress {
-        margin-bottom: 40px;
-    }
-    .section-contacts__form {
-        width: 335px;
-        margin-bottom: 38px;
+        margin-bottom: 36px;
     }
     .section-contacts-social {
         width: 60px;
@@ -209,48 +203,43 @@
     }
   }
 
-  @media(max-width:768px) {
-    .section-contacts__wrap-form {
-        padding: 115px 45px 105px 0;
+  @media(max-width:825px) {
+    .section-contacts__heading {
+        margin-bottom: 20px;
+    }
+    .map {
+        width: 44%;
     }
   }
  
-  @media(max-width:660px) {
-    .section-contacts {
+  @media(max-width:721px) {
+    .section-contacts__heading {
+        margin: 0;
+    }  
+    .section-contacts__content {
+        padding-top: 15px;
+        padding-bottom: 25px;
         border: none;
     }
-    .section-contacts__container {
-        flex-direction: column-reverse;
-        padding-left: 0;
-    }
-    .section-contacts__heading {
-        margin-left: 15px;
-    }
-    .section-contacts__wrap-form {
-        max-width: 100%;
-        padding: 22px 15px 30px 15px;
-    }
     .section-contacts__form {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .section-contacts__wrap-adress {
-        position: absolute;
-        line-height: 24px;
-        bottom: 95%;
+        max-width: 100%;
         margin-bottom: 20px;
     }
     .section-contacts__name-market {
         font-size: 18px;
+        line-height: 24px;
         margin-bottom: 0;
     }
     .section-contacts__adress {
         font-size: 14px;
-        margin: 0;
+        margin-bottom: 20px;
     }
-    .myMap1 {
+    .map {
+        position:unset;
+        width: 100%;
         height: 320px;
-        margin-top: 45px;
+        border: none;
+        margin-bottom: 20px;
     }
     .section-contacts__form__title {
         font-size: 18px;

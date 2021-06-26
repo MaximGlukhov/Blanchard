@@ -11,12 +11,15 @@
     opacity: 1; } }
 
 .just-validate-tooltip-container {
-  position: relative; }
+  position: relative; 
+  width: 100%;
+}
 
 .just-validate-tooltip-hide {
   -webkit-animation: fadeOut .4s linear;
           animation: fadeOut .4s linear;
-  opacity: 1; }
+  opacity: 1; 
+}
 
 .js-validate-error-label {
   position: absolute;
@@ -27,8 +30,6 @@
   padding: 4px 8px;
   font-size: 10px;
   pointer-events: none;
-  transition: all .4s linear; }
+  transition: all .4s linear; 
+}
 
-  .just-validate-tooltip-container {
-    width: 100%;
-  }
