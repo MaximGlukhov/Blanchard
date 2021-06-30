@@ -114,7 +114,6 @@
 
 .header__nav-bottom__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 1920px;
   height: 70px;
@@ -125,6 +124,7 @@
 
 .header__nav-bottom__list {
   display: flex;
+  margin-right: 317px;
 }
 
 .header__nav-bottom__item:not(:last-child) {
@@ -182,6 +182,8 @@
 
 .header__nav-bottom__form__input {
   width: 218px;
+  font-size: 18px;
+  font-weight: 400;
   background: transparent;
   padding-bottom: 5px;
   padding-left: 0;
@@ -416,12 +418,12 @@
   }
   .header__nav__item__come {
     display: inline-block;
-    width: 257px;
-    height: 60px;
+    padding: 19px 88px 22px 108px;
     text-align: center;
     border: 2px solid #9D5CD0;
     border-radius: 100px;
-    background-position-x: 85px;
+    background-position-x: 88px;
+    background-position-y: 23px;
   }
   .header__nav__item__come:hover,
   .header__nav__item__come:focus {

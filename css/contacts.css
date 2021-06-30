@@ -10,6 +10,7 @@
 }
 
 .section-contacts__name-market {
+    max-width: 256px;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 13px;
@@ -17,6 +18,7 @@
 }
 
 .section-contacts__adress {
+    max-width: 256px;
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
@@ -43,7 +45,7 @@
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
 }
 
 .section-contacts__form__title{  
@@ -100,9 +102,9 @@
 
 .section-contacts__form__btn {
     width: 157px;
-    height: 59px;
+    padding: 17px 35px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     border: 2px solid #9D5CD0;
     border-radius: 100px;
     color: rgba(157, 92, 208, 1);
@@ -126,6 +128,7 @@
 }
 
 .section-contacts__title {
+    max-width: 370px;
     font-size: 24px;
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
@@ -211,8 +214,8 @@
         margin: 0;
     }  
     .section-contacts__content {
-        padding-top: 15px;
-        padding-bottom: 25px;
+        padding-top: 10px;
+        padding-bottom: 28px;
         border: none;
     }
     .section-contacts__form {
@@ -233,11 +236,14 @@
         width: 100%;
         height: 320px;
         border: none;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+    }
+    .section-contacts__form {
+        margin-bottom: 25px;
     }
     .section-contacts__form__title {
         font-size: 18px;
-        margin-bottom: 23px;
+        margin-bottom: 18px;
     }
     .section-contacts__form__btn {
         width: 128px;
@@ -245,10 +251,11 @@
         font-size: 12px;
     }
     .section-contacts__title {
+        margin-bottom: 13px;
         font-size: 18px;
     }
     .section-contacts__social-items {
-        margin-right: 21px;
+        margin-right: 23px;
     }
     .section-contacts-social {
         width: 48px;

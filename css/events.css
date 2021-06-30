@@ -34,6 +34,9 @@
 }
 
 .events {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 500px;
     min-height: 700px;
@@ -72,6 +75,7 @@
     max-width: 212px;
     margin-left: auto;
     font-size: 12px;
+    font-weight: 600;
     line-height: 16px;
     color: rgba(153, 153, 153, 1);
     text-align: right;
@@ -94,9 +98,7 @@
 }
 
 .events__link {
-    position: absolute;
-    bottom: 48px;
-    left: 50px;
+    max-width: 92px;
     font-size: 16px;
     font-weight: 400;
     color: rgba(157, 92, 208, 1);
@@ -123,8 +125,7 @@
 }
 
 .section-events__btn {
-    width: 188px;
-    height: 59px;
+    padding: 17px 35px;
     font-size: 18px;
     font-weight: 700;
     color: rgba(157, 92, 208, 1);
@@ -179,19 +180,22 @@
 }
 
 @media(max-width: 1165px) {
+    .section-events {
+        padding-top: 85px;
+    }
     .events {
         width: 290px;
         min-height: 683px;
         padding-top: 250px;
         padding-left: 35px;
+        padding-bottom: 56px;
         background-size: 290px 200px;
     }
     .events__event-name {
         top: 214px;
     }
-    .events__link {
-        bottom: 55px;
-        left: 35px;
+    .events__desc {
+        max-width: 222px;
     }
 }
 
@@ -210,6 +214,9 @@
 }
 
 @media(max-width: 768px) {
+    .section-events {
+        padding-top: 80px;
+    }
     .events {
         width: 317px;
         min-height: 683px;
@@ -226,10 +233,6 @@
     }
     .events__desc {
         max-width: 242px;
-    }
-    .events__link {
-        bottom: 55px;
-        left: 35px;
     }
     .section-events__item:nth-child(n+3) {
         display: none;
@@ -262,11 +265,6 @@
     .events__desc {
         max-width: 400px;
     }
-    
-    .events__link {
-        bottom: 48px;
-        left: 50px;
-    }
 }
 
 @media(max-width: 550px) {
@@ -292,9 +290,10 @@
     }
     .events {
         width: 100%;
-        min-height: 683px;
+        min-height: 680px;
         padding-top: 250px;
         padding-left: 28px;
+        padding-bottom: 57px;
         background-size: 100% 200px;
         outline: none;
         box-sizing: border-box;
@@ -310,25 +309,21 @@
     .events__desc {
         max-width: 235px;
     }
-    .events__link {
-        bottom: 55px;
-        left: 28px;
-    }
     .events-panigation {
         position: static;
         display: flex;
         width: 110px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .events-panigation > .swiper-pagination-bullet {
-        width: 10px;
+        min-width: 10px;
         height: 10px;
         background-image: url('../img/events-bullet-active.svg');
         
     }
     .events-panigation > .swiper-pagination-bullet:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 15px;
     }
 }

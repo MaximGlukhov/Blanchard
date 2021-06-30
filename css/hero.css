@@ -47,7 +47,7 @@
 
 .sectiom-hero__content__heading {
   max-width: 597px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 72px;
   line-height: 82px;
   font-weight: 700;
@@ -60,12 +60,11 @@
   line-height: 30px;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
-  margin-bottom: 92px;
+  margin-bottom: 95px;
 }
 
 .section-hero__content__btn {
   display: inline-block;
-  max-height: 70px;
   padding: 22px 35px;
   text-align: center;
   border-radius: 100px;
