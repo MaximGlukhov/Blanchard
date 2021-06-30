@@ -1,6 +1,6 @@
 .section-editions {
     padding-top: 85px;
-    padding-bottom: 72px;
+    padding-bottom: 40px;
     background-image: url('../img/editions.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -329,7 +329,9 @@
 }
 
 @media(max-width: 1000px) {
-  
+    .section-editions {
+        padding-bottom: 45px;
+    }
     .section-editions__container {
         flex-direction: column;
     }
