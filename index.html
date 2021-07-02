@@ -60,7 +60,8 @@
     <div class="header__up">
       <div class="container header__container">
         <button aria-label="Вызов навигационного меню" id="burger" class="header__burger-btn"></button>
-        <a class="logo__link" href=""><img class="header__logo" src="img/logo.png" alt="Blanchard, художественная галерея - логотип"></a>
+        <a class="logo__link" href=""><img class="header__logo" src="img/logo.png"
+            alt="Blanchard, художественная галерея - логотип"></a>
         <nav id="menu" class="header__nav">
           <span id="burger-close" class="closing-cross-burger"></span>
           <ul class="header__nav__list">
@@ -527,9 +528,7 @@
           <ul id="accordion" class="section-catalog__list-accordeon">
             <li class="section-catalog__item-accordeon">
               <button class="section-catalog__item-accordeon__btn">С 1400 по 1499 гг.</button>
-              <div class="section-catalog__item-accordeon__desc">
-
-
+              <div class="section-catalog__item-accordeon__desc" data-simplebar>
                 <ul class="section-catalog__item-accordeon__desc_list">
                   <li class="section-catalog__item-accordeon__desc_item">
                     <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">Бенедетто ди
@@ -858,10 +857,10 @@
                       его брат Давид и сын Ридольфо.
                     </p>
                   </div>
-                    <a href="" class="events__link">
-                      Подробнее
-                    </a>
-                  
+                  <a href="" class="events__link">
+                    Подробнее
+                  </a>
+
                 </article>
               </div>
               <div class="section-events__slide swiper-slide">
@@ -879,9 +878,9 @@
                       факта.
                     </p>
                   </div>
-                    <a href="" class="events__link">
-                      Подробнее
-                    </a>                 
+                  <a href="" class="events__link">
+                    Подробнее
+                  </a>
                 </article>
               </div>
               <div class="section-events__slide swiper-slide">
@@ -899,9 +898,9 @@
                       формировании глубокомысленных рассуждений.
                     </p>
                   </div>
-                    <a href="" class="events__link">
-                      Подробнее
-                    </a>                
+                  <a href="" class="events__link">
+                    Подробнее
+                  </a>
                 </article>
               </div>
               <div class="section-events__slide swiper-slide">
@@ -917,10 +916,10 @@
                       Внезапно, реплицированные с зарубежных источников, современные исследования.
                     </p>
                   </div>
-                    <a href="" class="events__link">
-                      Подробнее
-                    </a>
-                  
+                  <a href="" class="events__link">
+                    Подробнее
+                  </a>
+
                 </article>
               </div>
               <div class="section-events__slide swiper-slide">
@@ -937,9 +936,9 @@
                       продолжили его брат Давид и сын Ридольфо.
                     </p>
                   </div>
-                    <a href="" class="events__link">
-                      Подробнее
-                    </a>                
+                  <a href="" class="events__link">
+                    Подробнее
+                  </a>
                 </article>
               </div>
               <div class="section-events__slide swiper-slide">
@@ -978,7 +977,7 @@
           <h3 class="section-editions__category-checkbox-list__title">
             Категории
           </h3>
-          <ul class="section-editions__category-checkbox-list">
+          <ul aria-label="фильтр по категориям" class="section-editions__category-checkbox-list">
             <li class="section-editions__category-checbox-item">
               <label class="section-editions__category__label">
                 <input type="checkbox" name="bestsellers" class="section-editions__category-checbox__input">
@@ -1069,7 +1068,7 @@
             <h3 class="section-editions__price__title">
               Цена
             </h3>
-            <form class="section-editions__price__form">
+            <form aria-label="установить фильтр по цене" class="section-editions__price__form">
               <span class="section-editions__price__form__desc">От</span>
               <input type="text" class="section-editions__price__input">
               <span class="section-editions__price__form__desc_to">до</span>
@@ -1381,31 +1380,50 @@
           <div class="section-projects__swiper swiper-container">
             <div class="swiper-wrapper">
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-workhouse.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-workhouse section-projects__slide-img"
+                      src="img/projects-workhouse.jpg" alt=""></div>
+                </a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-freelands.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-freelands section-projects__slide-img"
+                    src="img/projects-freelands.jpg" alt=""></div></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-institute.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-institute section-projects__slide-img"
+                    src="img/projects-institute.jpg" alt=""></div></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-1849.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-1849 section-projects__slide-img"
+                    src="img/projects-1849.jpg" alt=""></div></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-camden.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-camden section-projects__slide-img"
+                    src="img/projects-camden.jpg" alt=""></div></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-watts.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-watts section-projects__slide-img"
+                    src="img/projects-watts.jpg" alt=""></div></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-hiscox.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-hiscox section-projects__slide-img"
+                    src="img/projects-hiscox.jpg" alt=""></div></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-stassen.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-stassen section-projects__slide-img"
+                    src="img/projects-stassen.jpg" alt=""></div></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <img class="section-projects__slide-img" src="img/projects-esad.jpg" alt="">
+                <a class="section-projects__slide-link" href="">
+                  <div class="section-projects__slide-wrap"><img class="projects-esad section-projects__slide-img"
+                    src="img/projects-esad.jpg" alt=""></div></a>
               </div>
             </div>
           </div>
@@ -1432,7 +1450,7 @@
         </div>
         <div class="map" id="map"></div>
         <div class="container">
-          <form class="section-contacts__form">
+          <form aria-label="заказать обратный звонок" class="section-contacts__form">
             <h3 class="section-contacts__form__title">
               Заказать обратный звонок
             </h3>

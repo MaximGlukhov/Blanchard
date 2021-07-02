@@ -122,10 +122,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    overflow: auto;
+    /* column-count: 3; */
 }
 
 .section-catalog__item-accordeon__desc_item {
-    max-width: 206px;
+    max-width: 200px;
+    margin-right: 0;
     margin-bottom: 15px;
 }
 

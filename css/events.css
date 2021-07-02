@@ -276,7 +276,7 @@
     }
     .section-events {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 75px;
     }
     .section-events__heading {
         margin-bottom: 13px;
@@ -310,18 +310,14 @@
         max-width: 235px;
     }
     .events-panigation {
-        position: static;
-        display: flex;
-        width: 110px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
+        margin-top: 11px;
+        left: 0;
+        right: 0;
     }
     .events-panigation > .swiper-pagination-bullet {
         min-width: 10px;
         height: 10px;
         background-image: url('../img/events-bullet-active.svg');
-        
     }
     .events-panigation > .swiper-pagination-bullet:not(:last-child) {
         margin-right: 15px;
