@@ -377,9 +377,14 @@
     }
     .section-editions__category-checkbox-list {
         display: flex;
-        justify-content: space-between;
         max-width: 100%;
         margin-bottom: 25px;
+    }
+    .section-edition__category-checkbox-title-item:nth-child(1) {
+        margin-right: 58px;
+    }
+    .section-edition__category-checkbox-title-item:nth-child(2) {
+        margin-right: 52px;
     }
     .section-editions__swiper-box {
         padding-top: 50px;
@@ -410,12 +415,17 @@
     }
     .section-editions__category-checkbox-list {
         display: none;
-        flex-wrap: nowrap;
         width: 100%;
         height: 100%;
     }
+    .section-edition__category-checkbox-title-item:nth-child(1) {
+        margin-right: 0;
+    }
+    .section-edition__category-checkbox-title-item:nth-child(2) {
+        margin-right: 0;
+    }
     .section-editions__category-checkbox-list.edition-spoiler-active {
-        display: flex;
+        display: block;
     }
     .section-editions__category-checbox-item {
         position: relative;
