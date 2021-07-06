@@ -1,6 +1,6 @@
 .section-editions {
     padding-top: 85px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     background-image: url('../img/editions.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@
 
 .section-editions__category-checkbox-list {
     max-width: 265px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .section-editions__category-checkbox-list__title {
@@ -32,7 +32,7 @@
 }
 
 .section-editions__category-checbox-item {
-    margin-bottom: 13px;
+    margin-bottom: 14px;
 }
 
 .section-editions__category__label {
@@ -321,8 +321,8 @@
 .edition__btn:active {
     background-color: rgba(121, 67, 164, 1);
     color: #fff;
-    border: transparent;
-    box-shadow: 0 0 0 2px #D1A9F0 inset;
+    border: 2px solid #D1A9F0;
+    box-shadow: 0 0 0 1px #D1A9F0 inset;
 }
 
 .section-edition__right-wrap__mob-list {
@@ -337,7 +337,7 @@
 
 @media(max-width: 1300px) {
     .section-editions__swiper-container {
-        max-width: 615px;
+        max-width: 629px;
     }
     .edition {
         width: 100%;
@@ -354,6 +354,9 @@
     .section-editions__left-wrap {
         margin-right: 20px;
     }
+    .edition {
+        max-width: 290px;
+    }
     .edition__img {
         margin-bottom: 12px;
     }
@@ -361,26 +364,22 @@
 
 @media(max-width: 1000px) {
     .section-editions {
-        padding-bottom: 45px;
+        padding-bottom: 65px;
+    }
+    .section-editions__heading {
+        margin-bottom: 25px;
     }
     .section-editions__container {
         flex-direction: column;
     }
+    .section-editions__left-wrap {
+        margin-right: 0;
+    }
     .section-editions__category-checkbox-list {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-between;
         max-width: 100%;
-        height: 128px;
-        margin-bottom: 23px;
-    }
-    .section-editions__category-checbox-item {
-        margin-right: 58px;
-    }
-    .section-editions__category-checbox-item:nth-child(n+3) {
-        max-width: 246px;
-        margin-right: 50px;
-
+        margin-bottom: 25px;
     }
     .section-editions__swiper-box {
         padding-top: 50px;
@@ -512,6 +511,7 @@
     .edition__btn {
         width: 100%;
         font-size: 12px;
+        padding: 12px 19px;
     }
 }
 

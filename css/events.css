@@ -1,5 +1,5 @@
 .section-events {
-    padding-top: 85px;
+    padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
 }
@@ -40,7 +40,7 @@
     position: relative;
     width: 500px;
     min-height: 700px;
-    padding: 349px 19px 48px 50px;
+    padding: 355px 19px 48px 50px;
     text-align: left;
     background-repeat: no-repeat;
     background-position: top;
@@ -186,7 +186,7 @@
     .events {
         width: 290px;
         min-height: 683px;
-        padding-top: 250px;
+        padding-top: 255px;
         padding-left: 35px;
         padding-bottom: 56px;
         background-size: 290px 200px;
@@ -215,7 +215,8 @@
 
 @media(max-width: 768px) {
     .section-events {
-        padding-top: 80px;
+        padding-top: 75px;
+        padding-bottom: 85px;
     }
     .events {
         width: 317px;

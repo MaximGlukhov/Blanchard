@@ -20,6 +20,18 @@ const editionSwiper = new Swiper('.section-editions__swiper-container', {
         slidesPerGroup: 2,
       },
 
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 34,
+        slidesPerGroup: 2,
+      },
+      
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 49,
+        slidesPerGroup: 2,
+      },
+
       1801: {
         slidesPerView: 3,
         spaceBetween: 50,

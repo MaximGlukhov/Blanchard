@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contacts.css">
   <link rel="stylesheet" href="css/footer.css">
+  <script defer src="js/sub-menu.js"></script>
   <script defer src="js/burger.js"></script>
   <script defer src="js/select.js"></script>
   <script defer src="js/gallery-swiper.js"></script>
@@ -101,7 +102,7 @@
               </a>
             </li>
           </ul>
-          <button class="header__link header__nav__item__come">
+          <button aria-label="войти в личный кабинет" class="header__link header__nav__item__come">
             Войти
           </button>
         </nav>
@@ -121,10 +122,10 @@
       <div class="header__nav-bottom__container">
         <ul class="header__nav-bottom__list">
           <li class="header__nav-bottom__item">
-            <button class="header__nav-bottom__item__btn">
+            <button id="nav-bottom-one" class="header__nav-bottom__item__btn">
               Реализм
             </button>
-            <ul class="header__nav-bottom__sub-menu__list" data-simplebar>
+            <ul id="nav-bottom-menu-one" class="header__nav-bottom__sub-menu__list" data-simplebar>
               <li class="header__nav-bottom__sub-menu__item header__nav-bottom__sub-menu__item_tintoretto">
                 <a class="header__nav-bottom__sub-menu__item__link" href="">Тинторетто</a>
               </li>
@@ -140,10 +141,10 @@
             </ul>
           </li>
           <li class="header__nav-bottom__item">
-            <button class="header__nav-bottom__item__btn">
+            <button id="nav-bottom-two" class="header__nav-bottom__item__btn">
               Импрессионизм
             </button>
-            <ul class="header__nav-bottom__sub-menu__list" data-simplebar>
+            <ul id="nav-bottom-menu-two" class="header__nav-bottom__sub-menu__list" data-simplebar>
               <li class="header__nav-bottom__sub-menu__item header__nav-bottom__sub-menu__item_mone">
                 <a class="header__nav-bottom__sub-menu__item__link" href="">Моне</a>
               </li>
@@ -159,10 +160,10 @@
             </ul>
           </li>
           <li class="header__nav-bottom__item">
-            <button class="header__nav-bottom__item__btn">
+            <button id="nav-bottom-three" class="header__nav-bottom__item__btn">
               Постимпрессионизм
             </button>
-            <ul class="header__nav-bottom__sub-menu__list" data-simplebar>
+            <ul id="nav-bottom-menu-three" class="header__nav-bottom__sub-menu__list" data-simplebar>
               <li class="header__nav-bottom__sub-menu__item header__nav-bottom__sub-menu__item_vangog">
                 <a class="header__nav-bottom__sub-menu__item__link" href="">Ван Гог</a>
               </li>
@@ -178,10 +179,10 @@
             </ul>
           </li>
           <li class="header__nav-bottom__item">
-            <button class="header__nav-bottom__item__btn">
+            <button id="nav-bottom-four" class="header__nav-bottom__item__btn">
               Авангард
             </button>
-            <ul class="header__nav-bottom__sub-menu__list" data-simplebar>
+            <ul id="nav-bottom-menu-four" class="header__nav-bottom__sub-menu__list" data-simplebar>
               <li class="header__nav-bottom__sub-menu__item header__nav-bottom__sub-menu__item_kadinskiy">
                 <a class="header__nav-bottom__sub-menu__item__link" href="">Кадинский</a>
               </li>
@@ -197,10 +198,10 @@
             </ul>
           </li>
           <li class="header__nav-bottom__item">
-            <button class="header__nav-bottom__item__btn">
+            <button id="nav-bottom-five" class="header__nav-bottom__item__btn">
               Футуризм
             </button>
-            <ul class="header__nav-bottom__sub-menu__list" data-simplebar>
+            <ul id="nav-bottom-menu-five" class="header__nav-bottom__sub-menu__list" data-simplebar>
               <li class="header__nav-bottom__sub-menu__item header__nav-bottom__sub-menu__item_karra">
                 <a class="header__nav-bottom__sub-menu__item__link" href="">Карра</a>
               </li>
@@ -287,9 +288,9 @@
         <div class="section-gallery__swiper-box">
 
           <div class="pagination-box">
-            <div aria-label="назад" class="gallery-swiper-button-prev-new"></div>
+            <div class="gallery-swiper-button-prev-new"></div>
             <div class="section-gallery__panigation swiper-pagination"></div>
-            <div aria-label="вперёд" class="gallery-swiper-button-next-new"></div>
+            <div class="gallery-swiper-button-next-new"></div>
           </div>
 
           <div class="section-gallery__swiper swiper-container">
@@ -525,10 +526,11 @@
             <a class="painter__link" href="#gallery">В галерею</a>
           </article>
 
-          <ul id="accordion" class="section-catalog__list-accordeon">
+          <ul aria-label="фильтр художников по годам" id="accordion" class="section-catalog__list-accordeon">
             <li class="section-catalog__item-accordeon">
-              <button class="section-catalog__item-accordeon__btn">С 1400 по 1499 гг.</button>
-              <div class="section-catalog__item-accordeon__desc" data-simplebar>
+              <button class="section-catalog__item-accordeon__btn"><span
+                  class="section-catalog__item-accordeon__btn__text">С 1400 по 1499 гг.</span></button>
+              <div class="section-catalog__item-accordeon__desc">
                 <ul class="section-catalog__item-accordeon__desc_list">
                   <li class="section-catalog__item-accordeon__desc_item">
                     <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">Бенедетто ди
@@ -566,7 +568,8 @@
                     <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
                       Бьяджо д’Антонио Туччи</button>
                   </li>
-
+                </ul>
+                <ul class="section-catalog__item-accordeon__desc_list">
                   <li class="section-catalog__item-accordeon__desc_item">
                     <button class="section-catalog__item-accordeon__desc__btn tabs__btn"
                       data-path="two">Веккьетта</button>
@@ -604,6 +607,8 @@
                     <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
                       Джорджоне</button>
                   </li>
+                </ul>
+                <ul class="section-catalog__item-accordeon__desc_list">
                   <li class="section-catalog__item-accordeon__desc_item">
                     <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">Парентино,
                       Бернардо</button>
@@ -633,7 +638,8 @@
             </li>
 
             <li class="section-catalog__item-accordeon">
-              <button class="section-catalog__item-accordeon__btn">С 1500 по 1599 гг.</button>
+              <button class="section-catalog__item-accordeon__btn"><span
+                class="section-catalog__item-accordeon__btn__text">С 1500 по 1599 гг.</span></button>
               <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
                 <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
                 <div class="section-catalog__item-accordeon__desc_unkown__wrap">
@@ -646,7 +652,8 @@
               </div>
             </li>
             <li class="section-catalog__item-accordeon">
-              <button class="section-catalog__item-accordeon__btn">С 1600 по 1699 гг..</button>
+              <button class="section-catalog__item-accordeon__btn"><span
+                class="section-catalog__item-accordeon__btn__text">С 1600 по 1699 гг.</span></button>
               <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
                 <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
                 <div class="section-catalog__item-accordeon__desc_unkown__wrap">
@@ -659,7 +666,8 @@
               </div>
             </li>
             <li class="section-catalog__item-accordeon">
-              <button class="section-catalog__item-accordeon__btn">С 1700 по 1799 гг.</button>
+              <button class="section-catalog__item-accordeon__btn"><span
+                class="section-catalog__item-accordeon__btn__text">С 1700 по 1799 гг.</span></button>
               <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
                 <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
                 <div class="section-catalog__item-accordeon__desc_unkown__wrap">
@@ -672,7 +680,8 @@
               </div>
             </li>
             <li class="section-catalog__item-accordeon">
-              <button class="section-catalog__item-accordeon__btn">С 1800 по 1899 гг..</button>
+              <button class="section-catalog__item-accordeon__btn"><span
+                class="section-catalog__item-accordeon__btn__text">С 1800 по 1899 гг.</span></button>
               <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
                 <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
                 <div class="section-catalog__item-accordeon__desc_unkown__wrap">
@@ -685,7 +694,8 @@
               </div>
             </li>
             <li class="section-catalog__item-accordeon">
-              <button class="section-catalog__item-accordeon__btn">С 1900 по 1999 гг.</button>
+              <button class="section-catalog__item-accordeon__btn"><span
+                class="section-catalog__item-accordeon__btn__text">С 1900 по 1999 гг</span></button>
               <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
                 <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
                 <div class="section-catalog__item-accordeon__desc_unkown__wrap">
@@ -698,7 +708,8 @@
               </div>
             </li>
             <li class="section-catalog__item-accordeon">
-              <button class="section-catalog__item-accordeon__btn">С 2000 г.</button>
+              <button class="section-catalog__item-accordeon__btn"><span
+                class="section-catalog__item-accordeon__btn__text">С 2000 г.</span></button>
               <div class="section-catalog__item-accordeon__desc section-catalog__item-accordeon__desc_unkown">
                 <div class="section-catalog_item-accordeon__desc__unkown__img"></div>
                 <div class="section-catalog__item-accordeon__desc_unkown__wrap">
@@ -720,7 +731,7 @@
         <h2 class="heading section-events__heading">
           События
         </h2>
-        <ul class="section-events__list">
+        <ul aria-label="события, которые будут происходить вближайшее время" class="section-events__list">
           <li class="section-events__item">
             <article class="events events-engraving">
               <p class="events__event-name">
@@ -977,90 +988,102 @@
           <h3 class="section-editions__category-checkbox-list__title">
             Категории
           </h3>
-          <ul aria-label="фильтр по категориям" class="section-editions__category-checkbox-list">
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" name="bestsellers" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Бестселлеры</span>
-              </label>
+          <ul aria-label="фильтр изданий книг по категориям" class="section-editions__category-checkbox-list">
+            <li class="section-edition__category-checkbox-title-item">
+              <ul class="section-edition__category-checkbox__sublist">
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" name="bestsellers" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Бестселлеры</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" name="art" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Искусство</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" name="architecture" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Архитектура</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Дизайн</span>
+                  </label>
+                </li>
+              </ul>
             </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" name="art" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Искусство</span>
-              </label>
+            <li class="section-edition__category-checkbox-title-item">
+              <ul class="section-edition__category-checkbox__sublist">
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Мода</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Детям</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Художественная литература</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Публицистика</span>
+                  </label>
+                </li>
+              </ul>
             </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" name="architecture" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Архитектура</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Дизайн</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Мода</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Детям</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Художественная литература</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Публицистика</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Путеводители</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Философия</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Учебная литература</span>
-              </label>
-            </li>
-            <li class="section-editions__category-checbox-item">
-              <label class="section-editions__category__label">
-                <input type="checkbox" class="section-editions__category-checbox__input">
-                <span class="section-editions__category-checbox__icon"></span>
-                <span class="section-editions__category-checbox__text">Журналы и газеты</span>
-              </label>
+            <li class="section-edition__category-checkbox-title-item">
+              <ul class="section-edition__category-checkbox__sublist">
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Путеводители</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Философия</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Учебная литература</span>
+                  </label>
+                </li>
+                <li class="section-editions__category-checbox-item">
+                  <label class="section-editions__category__label">
+                    <input type="checkbox" class="section-editions__category-checbox__input">
+                    <span class="section-editions__category-checbox__icon"></span>
+                    <span class="section-editions__category-checbox__text">Журналы и газеты</span>
+                  </label>
+                </li>
+              </ul>
             </li>
           </ul>
 
@@ -1380,50 +1403,40 @@
           <div class="section-projects__swiper swiper-container">
             <div class="swiper-wrapper">
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-workhouse section-projects__slide-img"
-                      src="img/projects-workhouse.jpg" alt=""></div>
-                </a>
+                <a class="section-projects__slide-wrap"><img class="projects-workhouse section-projects__slide-img"
+                    src="img/projects-workhouse.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-freelands section-projects__slide-img"
-                    src="img/projects-freelands.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-freelands section-projects__slide-img"
+                    src="img/projects-freelands.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-institute section-projects__slide-img"
-                    src="img/projects-institute.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-institute section-projects__slide-img"
+                    src="img/projects-institute.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-1849 section-projects__slide-img"
-                    src="img/projects-1849.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-1849 section-projects__slide-img"
+                    src="img/projects-1849.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-camden section-projects__slide-img"
-                    src="img/projects-camden.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-camden section-projects__slide-img"
+                    src="img/projects-camden.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-watts section-projects__slide-img"
-                    src="img/projects-watts.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-watts section-projects__slide-img"
+                    src="img/projects-watts.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-hiscox section-projects__slide-img"
-                    src="img/projects-hiscox.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-hiscox section-projects__slide-img"
+                    src="img/projects-hiscox.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-stassen section-projects__slide-img"
-                    src="img/projects-stassen.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-stassen section-projects__slide-img"
+                    src="img/projects-stassen.jpg" alt=""></a>
               </div>
               <div class="section-projects__slide swiper-slide">
-                <a class="section-projects__slide-link" href="">
-                  <div class="section-projects__slide-wrap"><img class="projects-esad section-projects__slide-img"
-                    src="img/projects-esad.jpg" alt=""></div></a>
+                <a class="section-projects__slide-wrap"><img class="projects-esad section-projects__slide-img"
+                    src="img/projects-esad.jpg" alt=""></a>
               </div>
             </div>
           </div>
@@ -1455,11 +1468,11 @@
               Заказать обратный звонок
             </h3>
             <div class="just-validate-tooltip-container">
-              <input required type="text" placeholder="Имя*"
+              <input aria-label="введите ваше имя" required type="text" placeholder="Имя*"
                 class="section-contacts__form__input section-contacts__form__input_name" data-validate-field="name">
             </div>
             <div class="just-validate-tooltip-container">
-              <input required type="tel" placeholder="Телефон*"
+              <input aria-label="введите ваш телефон" required type="tel" placeholder="Телефон*"
                 class="section-contacts__form__input section-contacts__form__input_tel" data-validate-field="tel">
             </div>
             <button class="section-contacts__form__btn">Заказать</button>

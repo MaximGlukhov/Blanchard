@@ -101,7 +101,7 @@
 }
 
 .section-contacts__form__btn {
-    width: 157px;
+    max-width: 157px;
     padding: 17px 35px;
     font-size: 18px;
     font-weight: 700;
@@ -123,8 +123,8 @@
 .section-contacts__form__btn:active {
     background-color: rgba(121, 67, 164, 1);
     color: #fff;
-    border: transparent;
-    box-shadow: 0 0 0 2px #D1A9F0 inset;
+    border: 2px solid #D1A9F0;
+    box-shadow: 0 0 0 1px #D1A9F0 inset;
 }
 
 .section-contacts__title {
@@ -176,7 +176,7 @@
         margin-bottom: 25px;
     }
     .section-contacts__content {
-        padding-top: 124px;
+        padding-top: 125px;
         padding-bottom: 100px;
     }
     .map {
@@ -186,7 +186,7 @@
         max-width: 335px;
     }
     .section-contacts__name-market {
-        margin-bottom: 15px;
+        margin-bottom: 13px;
     }
     .section-contacts__adress {
         margin-bottom: 36px;
@@ -243,11 +243,14 @@
     }
     .section-contacts__form__title {
         font-size: 18px;
-        margin-bottom: 18px;
+        margin-bottom: 25px;
+    }
+    .section-contacts__form__input {
+        margin-bottom: 20px;
     }
     .section-contacts__form__btn {
-        width: 128px;
-        height: 40px;
+        max-width: 128px;
+        padding: 12px 35px;
         font-size: 12px;
     }
     .section-contacts__title {

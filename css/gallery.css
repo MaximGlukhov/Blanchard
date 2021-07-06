@@ -44,6 +44,7 @@
 }
 
 .section-gallery__note__link:focus {
+    background-color: rgba(157, 92, 208, 1);
     border: 1px solid var(--purple);
 }
 
@@ -225,6 +226,7 @@
 
 .section-gallery__img {
     position: relative;
+    width: 350px;
     height: 350px;
 }
 
