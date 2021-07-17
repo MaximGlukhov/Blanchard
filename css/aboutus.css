@@ -17,28 +17,3 @@
     color: rgba(51, 51, 51, 1);
     max-width: 1080px;
 }
-
-@media(max-width:1366px) {
-    .section-aboutus {
-        padding-top: 85px;
-    }
-    .section-aboutus__heading {
-        margin-bottom: 23px;
-    }
-}
-
-@media(max-width:660px) {
-    .section-aboutus {
-        padding-top: 50px;
-        padding-bottom: 40px;
-    }
-    .section-aboutus__heading {
-        font-size: 28px;
-        line-height: 38px;
-        margin-bottom: 15px;
-    }
-    .section-aboutus__desc {
-        font-size: 14px;
-        line-height: 28px;
-    }
-}

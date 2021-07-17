@@ -18,19 +18,19 @@ const gallerySwiper = new Swiper('.section-gallery__swiper', {
       },
    
    
-      661: {
+      576: {
         slidesPerView: 2,
         spaceBetween: 34,
         slidesPerGroup: 2,
         slidesPerColumn: 2,
       },
-      
-      1601: {
+
+      1366: {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3,
         slidesPerColumn: 2,
-      }
+      },
     }
   });
 

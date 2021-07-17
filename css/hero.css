@@ -14,7 +14,7 @@
   background-size: cover;
   z-index: -1;
   -webkit-animation: anim 14s linear infinite;
-          animation: anim 14s linear infinite;
+  animation: anim 14s linear infinite;
 }
 
 @-webkit-keyframes anim {
@@ -81,53 +81,10 @@
 
 .section-hero__content__btn:focus {
   outline: none;
-  box-shadow: inset 0 0 0 3px white,
-              0 0 0 2px #C283F3;
+  box-shadow: inset 0 0 0 3px white, 0 0 0 2px #C283F3;
 }
 
 .section-hero__content__btn:active {
   background: rgba(121, 67, 164, 1);
   box-shadow: none;
-}
-
-@media(max-width: 1366px) {
-  .section-hero__content {
-    padding: 113px 0 114px 0;
-  }
-  .sectiom-hero__content__heading {
-    max-width: 585px;
-    margin-bottom: 13px;
-  }
-  .section-hero__content__desc {
-    max-width: 661px;
-    margin-bottom: 139px;
-  }
-}
-
-@media(max-width: 660px) {
-  .section-hero__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 0 45px 0;
-  }
-  .sectiom-hero__content__heading {
-    max-width: 258px;
-    margin-bottom: 10px;
-    font-size: 32px;
-    line-height: 40px;
-    text-align: center;
-  }
-  .section-hero__content__desc {
-    max-width: 275px;
-    margin-bottom: 44px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    text-align: center;
-  }
-  .section-hero__content__btn {
-    font-size: 12px;
-    padding: 11px 16px;
-  }
 }

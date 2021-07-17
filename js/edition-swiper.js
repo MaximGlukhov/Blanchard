@@ -14,13 +14,7 @@ const editionSwiper = new Swiper('.section-editions__swiper-container', {
     
     breakpoints: {
      
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 34,
-        slidesPerGroup: 2,
-      },
-
-      768: {
+      577: {
         slidesPerView: 2,
         spaceBetween: 34,
         slidesPerGroup: 2,
@@ -32,7 +26,7 @@ const editionSwiper = new Swiper('.section-editions__swiper-container', {
         slidesPerGroup: 2,
       },
 
-      1801: {
+      1200: {
         slidesPerView: 3,
         spaceBetween: 50,
         slidesPerGroup: 3,

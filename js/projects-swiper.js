@@ -7,11 +7,6 @@ const projectsSwiper = new Swiper('.section-projects__swiper', {
 
 
     breakpoints: {
-        540: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-            slidesPerGroup: 2,
-        },
         768: {
             slidesPerView: 2,
             spaceBetween: 34,
@@ -22,7 +17,7 @@ const projectsSwiper = new Swiper('.section-projects__swiper', {
             spaceBetween: 50,
             slidesPerGroup: 2,
         },
-        1900: {
+        1200: {
             slidesPerView: 3,
             spaceBetween: 50,
             slidesPerGroup: 3,

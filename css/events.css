@@ -19,10 +19,9 @@
     flex-wrap: wrap;
 }
 
-
 .section-events__item {
+    width: 31.134%;
     margin-bottom: 50px;
-    
 }
 
 .section-events__item:nth-child(n+4) {
@@ -38,13 +37,13 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    width: 500px;
+    width: 100%;
     min-height: 700px;
     padding: 355px 19px 48px 50px;
     text-align: left;
     background-repeat: no-repeat;
     background-position: top;
-    background-size: contain;
+    background-size: 100% 43%;
     outline: 1px solid rgba(202, 202, 202, 1);
 }
 
@@ -70,8 +69,8 @@
 
 .events__event-name {
     position: absolute;
-    right: 19px;
-    top: 313px;
+    right: 5%;
+    top: 45%;
     max-width: 212px;
     margin-left: auto;
     font-size: 12px;
@@ -139,8 +138,7 @@
     display: none;
 }
 
-.section-events__btn:focus,
-.section-events__btn:hover {
+.section-events__btn:focus, .section-events__btn:hover {
     outline: none;
     background-color: rgba(157, 92, 208, 1);
     color: white;
@@ -148,179 +146,4 @@
 
 .section-events__btn:active {
     border-color: var(--white);
-}
-
-@media(max-width: 1815px) {
-    .events {
-        width: 450px;
-        padding-top: 330px;
-    }
-    .events__event-name {
-        top: 290px;
-    }
-}
-@media(max-width: 1665px) {
-    .events {
-        width: 400px;
-        padding-top: 300px;
-    }
-    .events__event-name {
-        top: 260px;
-    }
-}
-
-@media(max-width: 1310px) {
-    .events {
-        width: 350px;
-        padding-top: 270px;
-    }
-    .events__event-name {
-        top: 230px;
-    }
-}
-
-@media(max-width: 1165px) {
-    .section-events {
-        padding-top: 90px;
-    }
-    .events {
-        width: 290px;
-        min-height: 683px;
-        padding-top: 255px;
-        padding-left: 35px;
-        padding-bottom: 56px;
-        background-size: 290px 200px;
-    }
-    .events__event-name {
-        top: 214px;
-    }
-    .events__desc {
-        max-width: 222px;
-    }
-}
-
-@media(max-width: 970px) {
-    .events {
-        width: 250px;
-        min-height: 800px;
-    }
-}
-
-@media(max-width: 850px) {
-    .events {
-        width: 220px;
-        min-height: 800px;
-    }
-}
-
-@media(max-width: 768px) {
-    .section-events {
-        padding-top: 75px;
-        padding-bottom: 85px;
-    }
-    .events {
-        width: 317px;
-        min-height: 683px;
-        padding-top: 252px;
-        padding-left: 35px;
-        background-size: 317px 200px;
-    }
-    .events__title {
-        max-width: 252px;
-        margin-bottom: 3px;
-    }
-    .events__event-name {
-        top: 214px;
-    }
-    .events__desc {
-        max-width: 242px;
-    }
-    .section-events__item:nth-child(n+3) {
-        display: none;
-    }
-    .events-active.section-events__item:nth-child(n+3) {
-        display: inline-block;
-    }
-    
-}
-
-@media(max-width: 734px) {
-    .events {
-        width: 500px;
-        min-height: 700px;
-        background-size: contain;
-        padding: 349px 19px 48px 50px; 
-    }
-    .events__event-name {
-        right: 19px;
-        top: 313px;
-    }
-    .events__title {
-        max-width: 420px;
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    
-    .events__desc {
-        max-width: 400px;
-    }
-}
-
-@media(max-width: 550px) {
-    .section-events__list {
-        display: none;
-    }
-    .section-events__btn {
-        display: none;
-    }
-    .section-events {
-        padding-top: 50px;
-        padding-bottom: 75px;
-    }
-    .section-events__heading {
-        margin-bottom: 13px;
-    }
-    .section-events__swiper-box {
-        display: block;
-    }
-    .section-events__slide {
-        border: 1px solid rgba(202, 202, 202, 1);
-        box-sizing: border-box;
-    }
-    .events {
-        width: 100%;
-        min-height: 680px;
-        padding-top: 250px;
-        padding-left: 28px;
-        padding-bottom: 57px;
-        background-size: 100% 200px;
-        outline: none;
-        box-sizing: border-box;
-    }
-    .events__event-name {
-        right: 19px;
-        top: 214px;
-    }
-    .events__title {
-        max-width: 245px;
-        margin-bottom: 38px;
-    }
-    .events__desc {
-        max-width: 235px;
-    }
-    .events-panigation {
-        margin-top: 11px;
-        left: 0;
-        right: 0;
-    }
-    .events-panigation > .swiper-pagination-bullet {
-        min-width: 10px;
-        height: 10px;
-        background-image: url('../img/events-bullet-active.svg');
-    }
-    .events-panigation > .swiper-pagination-bullet:not(:last-child) {
-        margin-right: 15px;
-    }
 }

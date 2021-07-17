@@ -25,8 +25,7 @@
     transform: translateY(4px);
 }
 
-.section-pojects__desc__icon:hover,
-.section-pojects__desc__icon:focus {
+.section-pojects__desc__icon:hover, .section-pojects__desc__icon:focus {
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z' fill='%23D1A9F0' stroke='%239D5CD0'/%3E%3Cpath d='M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z' fill='black'/%3E%3C/svg%3E ");
 }
 
@@ -85,16 +84,17 @@
 }
 
 .section-projects__swiper {
-    max-width: 1450px;;
+    max-width: 1450px;
+    ;
     height: 150px;
 }
 
 .section-projects__slide-wrap {
+    max-width: 100%;
+    height: 150px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    width: 450px;
-    height: 150px;
     box-shadow: 0 0 0 1px rgba(202, 202, 202, 1) inset;
 }
 
@@ -108,7 +108,7 @@
 
 .section-projects__slide-wrap:hover>.section-projects__slide-img {
     -webkit-filter: none;
-            filter: none;
+    filter: none;
     opacity: 1;
 }
 
@@ -118,7 +118,7 @@
 
 .section-projects__slide-wrap:active {
     -webkit-filter: none;
-            filter: none;
+    filter: none;
     box-shadow: 0 0 0 1px #9D5CD0 inset;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .projects-institute {
-    width: 330px;
+    width: 73.33333%;
     height: 59px;
 }
 
@@ -158,7 +158,7 @@
 }
 
 .projects-stassen {
-    width: 286px;
+    width: 63.55555%;
     height: 69px;
 }
 
@@ -226,219 +226,4 @@
 
 .section-projects-button-next.swiper-button-disabled {
     opacity: .5;
-}
-
-@media(max-width:1900px) {
-    .section-projects__swiper-box {
-        padding-right: 53px;
-        padding-left: 53px;
-    }
-    .section-projects__swiper {
-        max-width: 950px;;
-    }
-}
-
-@media(max-width:1205px) {
-    .section-projects {
-        padding-top: 85px;
-        padding-bottom: 85px;
-    }
-    .section-projects__container {
-        padding-right: 0;
-    }
-    .section-projects__heading {
-        margin-bottom: 25px;
-    }
-    .section-projects__desc {
-        margin-bottom: 20px;
-    }
-    .section-projects__swiper {
-        max-width: 818px;
-        height: 128px;
-    }
-    .section-projects__slide-wrap {
-        width: 384px;
-        height: 128px;
-    }
-    .projects-workhouse {
-        width: 229px;
-        height: 54px;
-    }
-        .projects-freelands {
-        width: 210px;
-        height: 52px;
-    }
-        .projects-institute {
-        width: 283px;
-        height: 49px;
-    }
-        .projects-1849 {
-        width: 105px;
-        height: 72px;
-    }
-        .projects-camden {
-        width: 215px;
-        height: 60px;
-    }
-        .projects-watts {
-        width: 158px;
-        height: 69px;
-    }
-        .projects-hiscox {
-        width: 148px;
-        height: 73px;
-    }
-        .projects-stassen {
-        width: 244px;
-        height: 59px;
-    }
-        .projects-esad {
-        width: 196px;
-        height: 53px;
-    }
-}
-
-@media(max-width:1010px) {
-    .section-projects {
-        padding-top: 80px;
-    }
-    .section-projects__container {
-        padding-right: 49px;
-    }
-    .section-projects__heading {
-        margin-bottom: 25px;
-    }
-    .section-projects__desc {
-        max-width: 668px;
-        margin-bottom: 25px;
-    }
-    .section-projects__swiper {
-        max-width: 562px;
-        height: 106px;
-    }
-    .section-projects__slide-wrap {
-        width: 264px;
-        height: 106px;
-    }
-    .projects-workhouse {
-        width: 195px;
-        height: 45px;
-    }
-        .projects-freelands {
-        width: 210px;
-        height: 52px;
-    }
-        .projects-institute {
-        width: 217px;
-        height: 38px;
-    }
-        .projects-1849 {
-        width: 105px;
-        height: 72px;
-    }
-        .projects-camden {
-        width: 176px;
-        height: 48px;
-    }
-        .projects-watts {
-        width: 143px;
-        height: 62px;
-    }
-        .projects-hiscox {
-        width: 121px;
-        height: 59px;
-    }
-        .projects-stassen {
-        width: 194px;
-        height: 47px;
-    }
-        .projects-esad {
-        width: 182px;
-        height: 49px;
-    }
-    .section-projects__subtitle {
-        margin-bottom: 35px;
-    }
-}
-
-@media(max-width:750px) {
-    .section-projects__swiper {
-        max-width: 424px;
-        height: 65px;
-    }
-    .section-projects__slide-wrap {
-        width: 195px;
-        height: 65px;
-    }
-    .projects-workhouse {
-        width: 117px;
-        height: 27px;
-    }
-        .projects-freelands {
-        width: 105px;
-        height: 26px;
-    }
-        .projects-institute {
-        width: 141px;
-        height: 24px;
-    }
-        .projects-1849 {
-        width: 53px;
-        height: 37px;
-    }
-        .projects-camden {
-        width: 109px;
-        height: 30px;
-    }
-        .projects-watts {
-        width: 80px;
-        height: 35px;
-    }
-        .projects-hiscox {
-        width: 75px;
-        height: 37px;
-    }
-        .projects-stassen {
-        width: 124px;
-        height: 30px;
-    }
-        .projects-esad {
-        width: 99px;
-        height: 27px;
-    }
-}
-
-@media(max-width:540px) {
-    .section-projects {
-        padding-top: 50px;
-        padding-bottom: 45px;
-    }
-    .section-projects__container {
-        padding-right: 15px;
-    }
-    .section-projects__heading {
-        margin-bottom: 15px;
-    }
-    .section-projects__desc {
-        max-width: 289px;
-        margin-bottom: 16px;
-    }
-    .section-projects__subtitle {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-    .section-projects__swiper-box {
-        padding-right: 45px;
-        padding-left: 45px;
-    }
-    .section-projects__swiper {
-        max-width: 195px;
-    }
-    .section-projects-button-prev {
-        bottom: 30%;
-    }
-    .section-projects-button-next {
-        bottom: 30%;
-    }
 }
