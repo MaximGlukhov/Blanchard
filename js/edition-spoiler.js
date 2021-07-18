@@ -1,16 +1,19 @@
-window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.section-editions__category-checkbox-list__title').addEventListener('click', function() {       
-        document.querySelector('#edition-check-one').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check2').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check3').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check4').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check5').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check6').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check7').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check8').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check9').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check10').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check11').classList.toggle('edition-spoiler-active')
-        document.querySelector('#edition-check12').classList.toggle('edition-spoiler-active')
+window.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.section-editions__category-checkbox-list__title').addEventListener('click', function () {
+        document.querySelectorAll(".section-editions__category__label").forEach(item => {
+            item.parentElement.classList.toggle('edition-spoiler-active');
+            if (item.querySelector(".section-editions__category-checbox__input").checked) {
+                item.parentElement.classList.add('edition-spoiler-active');
+            }
+        })
     })
-  })
+
+
+    document.querySelectorAll(".section-editions__category__label").forEach(item => {
+        item.addEventListener("click", function () {
+            if (!this.querySelector(".section-editions__category-checbox__input").checked) {
+                item.parentElement.classList.remove('edition-spoiler-active');
+            }
+        })
+    })
+})
