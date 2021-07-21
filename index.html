@@ -57,6 +57,7 @@
   <script defer src="js/modal.js"></script>
   <script defer src="js/scroll.js"></script>
   <script defer src="js/libs/form-send.js"></script>
+  <script defer src="js/hero-slider.js"></script>
 </head>
 
 <body>
@@ -233,22 +234,33 @@
   <main>
     <section class="section-hero">
 
-      <div class="container">
-        <div class="section-hero__box">
-          <div class="section-hero__content">
-            <h2 class="sectiom-hero__content__heading">
-              Прикоснитесь к прекрасному
-            </h2>
-            <p class="section-hero__content__desc">
-              Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для
-              новых предложений.
-            </p>
-            <a href="#contacts" class="section-hero__content__btn">
-              Подписаться на рассылку
-            </a>
+
+        <div class="hero-slider-box slider-container">
+          <div class="hero-swiper-container swiper-container">
+            <div class="swiper-wrapper hero-wrapper">
+              <div class="swiper-slide hero-slide hero-slider__slide-one"></div>
+              <div class="swiper-slide hero-slide hero-slider__slide-two"></div>
+              <div class="swiper-slide hero-slide hero-slider__slide-three"></div>
+            </div>
           </div>
         </div>
-      </div>
+
+        <div class="container">
+          <div class="section-hero__box">
+            <div class="section-hero__content">
+              <h2 class="sectiom-hero__content__heading">
+                Прикоснитесь к прекрасному
+              </h2>
+              <p class="section-hero__content__desc">
+                Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для
+                новых предложений.
+              </p>
+              <a href="#contacts" class="section-hero__content__btn">
+                Подписаться на рассылку
+              </a>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section id="aboutus" class="section-aboutus">
@@ -608,7 +620,8 @@
                       Андреа Верроккьо</button>
                   </li>
                   <li class="section-catalog__item-accordeon__desc_item">
-                    <a href="#domeniko" class="domeniko section-catalog__item-accordeon__desc__btn tabs__btn  tabs__btn__active"
+                    <a href="#domeniko"
+                      class="domeniko section-catalog__item-accordeon__desc__btn tabs__btn  tabs__btn__active"
                       data-path="one">
                       Доменико Гирландайо</a>
                   </li>
