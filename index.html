@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/contacts.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/media.css">
   <script defer src="js/sub-menu.js"></script>
   <script defer src="js/burger.js"></script>
@@ -53,6 +54,9 @@
   <script defer src="js/form.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
   <script defer src="js/maps.js"></script>
+  <script defer src="js/modal.js"></script>
+  <script defer src="js/scroll.js"></script>
+  <script defer src="js/libs/form-send.js"></script>
 </head>
 
 <body>
@@ -302,7 +306,7 @@
                 </div>
               </div>
               <div class="section-gallery__slide swiper-slide">
-                <div class="section-gallery__img">
+                <div data-toggle="modal" data-target="#modal-2" class="section-gallery__img">
                   <img src="img/pic-2.jpg" alt="">
                 </div>
               </div>
@@ -450,6 +454,32 @@
           </div>
         </div>
       </div>
+
+      <article id="modal-2" class="modal">
+        <div class="modal-dialog">
+          <div class="modal__content woman-with-a-rake">
+            <img class="modal__img" src="img/modal-kazimir-wooman.jpg" alt="женщина с граблями, Казимир Малевич">
+            <div class="modal__content__wrap">
+              <h2 class="modal__title">
+                Казимир Малевич
+              </h2>
+              <h3 class="modal__subtitle">
+                “Женщина с граблями”
+              </h3>
+              <p class="modal__date">
+                1931-1932
+              </p>
+              <p class="modal__desc">
+                Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в
+                1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927
+                году.
+              </p>
+              <button class="modal__btn"></button>
+            </div>
+          </div>
+        </div>
+      </article>
+
     </section>
 
     <section id="catalog" class="section-catalog">
@@ -496,7 +526,7 @@
         </div>
 
         <div class="section-catalog__bottom-wrap">
-          <article class="painter tab-content tab-content-active" data-target="one">
+          <article id="domeniko" class="domeniko painter tab-content tab-content-active" data-target="one">
             <picture>
               <source srcset="img/domeniko-girlandayo.jpg 2x, img/domeniko-girlandayo.jpg 1x">
               <img class="painter__photo" src="img/domeniko-girlandayo.jpg" alt="Художник, Доменико Гирландайо">
@@ -578,9 +608,9 @@
                       Андреа Верроккьо</button>
                   </li>
                   <li class="section-catalog__item-accordeon__desc_item">
-                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn  tabs__btn__active"
+                    <a href="#domeniko" class="domeniko section-catalog__item-accordeon__desc__btn tabs__btn  tabs__btn__active"
                       data-path="one">
-                      Доменико Гирландайо</button>
+                      Доменико Гирландайо</a>
                   </li>
                   <li class="section-catalog__item-accordeon__desc_item">
                     <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
@@ -1475,17 +1505,21 @@
         <div class="map" id="map"></div>
         <div class="container">
           <form aria-label="заказать обратный звонок" class="section-contacts__form">
+            <input type="hidden" name="project_name" value="Blanchard">
+            <input type="hidden" name="admin_email" value="gluxov-1990@mail.ru">
+            <input type="hidden" name="form_subject" value="Form Footer">
             <h3 class="section-contacts__form__title">
               Заказать обратный звонок
             </h3>
             <div class="just-validate-tooltip-container">
-              <input aria-label="введите ваше имя" required type="text" placeholder="Имя*"
+              <input name="имя" aria-label="введите ваше имя" required type="text" placeholder="Имя*"
                 class="section-contacts__form__input section-contacts__form__input_name" data-validate-field="name">
             </div>
             <div class="just-validate-tooltip-container">
-              <input aria-label="введите ваш телефон" required type="tel" placeholder="Телефон*"
+              <input name="телефон" aria-label="введите ваш телефон" required type="tel" placeholder="Телефон*"
                 class="section-contacts__form__input section-contacts__form__input_tel" data-validate-field="tel">
             </div>
+            <div id="form_result"></div>
             <button class="section-contacts__form__btn">Заказать</button>
           </form>
           <h3 class="section-contacts__title">
