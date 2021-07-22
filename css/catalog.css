@@ -80,6 +80,7 @@
 .painter__photo {
     margin-bottom: 30px;
     height: 41%;
+    object-fit: cover;
 }
 
 .painter__title {

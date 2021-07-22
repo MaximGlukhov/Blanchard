@@ -75,10 +75,10 @@ body {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1703px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: 0 auto;
-  padding-left: 157px;
-  padding-right: 157px;
 }
 
 .heading {

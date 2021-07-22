@@ -29,4 +29,22 @@ new JustValidate('.section-contacts__form', {
       function: 'Номер указан неверно'
     },
   },
+  submitHandler: function (form, values, ajax) {
+    ajax({
+      url: 'mail.php',
+      method: 'POST',
+      data: values,
+      async: true,
+      callback: function (response) {
+        alert('AJAX submit successful! \nResponse from server:' + response)
+      },
+      error: function (response) {
+        alert('AJAX submit error! \nResponse from server:' + response)
+      }
+    });
+  },
+
+  invalidFormCallback: function (errors) {
+    console.log(errors);
+  },
 });

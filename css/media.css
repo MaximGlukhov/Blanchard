@@ -835,6 +835,8 @@
     .painter__photo {
         height: 181px;
         margin-bottom: 15px;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .section-catalog_item-accordeon__desc__unkown__img {
         width: 88px;
@@ -910,18 +912,21 @@
     .section-events__swiper-box {
         display: block;
     }
+    .section-events-swiper {
+        max-width: 350px;
+    }
     .section-events__slide {
+        max-width: 350px;
         border: 1px solid rgba(202, 202, 202, 1);
         box-sizing: border-box;
     }
     .events {
         width: 100%;
+        max-width: 400px;
         min-height: 680px;
         padding: 250px 16px 56px 28px;
-        padding-bottom: 57px;
         background-size: 100% 200px;
         outline: none;
-        box-sizing: border-box;
     }
     .events__event-name {
         right: 19px;
@@ -1212,6 +1217,7 @@
     .modal__content {
         position: relative;
         flex-direction: column;
+        height: 620px;
     }
     .modal__img {
         max-width: 100%;
@@ -1225,5 +1231,14 @@
     .modal__btn {
         top: 10px;
         right: 10px;
+    }
+    .modal__title {
+        margin-bottom: 2px;
+    }
+    .modal__subtitle {
+        margin-bottom: 5px;
+    }
+    .modal__date {
+        margin-bottom: 12px;
     }
 }

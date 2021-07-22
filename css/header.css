@@ -36,7 +36,7 @@
 }
 
 .header__nav__item:not(:last-child) {
-  margin-right: 63px;
+  margin-right: 3.29vw;
 }
 
 .header__nav__link {
@@ -122,21 +122,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 1920px;
-  /* justify-content: space-between; */
+  max-width: 1703px;
   height: 70px;
   margin: 0 auto;
-  padding-left: 157px;
-  padding-right: 157px;
+  padding-left: 50px;
+  padding-right:  50px;
 }
 
 .header__nav-bottom__list {
   display: flex;
-  /* margin-right: 317px; */
 }
 
 .header__nav-bottom__item:not(:last-child) {
-  margin-right: 97px;
+  margin-right: 5.1vw;
 }
 
 .header__nav-bottom__item {
