@@ -262,11 +262,6 @@
   display: block;
 }
 
-/* .header__nav-bottom__item__btn:active ~ .header__nav-bottom__sub-menu__list,
-.header__nav-bottom__item__btn:focus ~ .header__nav-bottom__sub-menu__list {
-  opacity: 1;
-} */
-
 .simplebar-content-wrapper {
   overflow: auto;
 }

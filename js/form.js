@@ -31,20 +31,20 @@ new JustValidate('.section-contacts__form', {
   },
   submitHandler: function (form, values, ajax) {
     ajax({
-      url: 'mail.php',
-      method: 'POST',
-      data: values,
-      async: true,
-      callback: function (response) {
-        alert('AJAX submit successful! \nResponse from server:' + response)
-      },
-      error: function (response) {
-        alert('AJAX submit error! \nResponse from server:' + response)
-      }
+        url: 'https://just-validate-api.herokuapp.com/submit',
+        method: 'POST',
+        data: values,
+        async: true,
+        callback: function (response) {
+            alert('Данные отправились успешно')
+        },
+        error: function (response) {
+            alert('Ошибка отправки данных')
+        }
     });
-  },
+},
 
-  invalidFormCallback: function (errors) {
+invalidFormCallback: function (errors) {
     console.log(errors);
-  },
+},
 });

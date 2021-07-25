@@ -638,7 +638,7 @@
                       Грегорио ди Чекко</button>
                   </li>
                   <li class="section-catalog__item-accordeon__desc_item">
-                    <button class="section-gallery__item-accordeon__desc__btn tabs__btn" data-path="two">
+                    <button class="section-catalog__item-accordeon__desc__btn tabs__btn" data-path="two">
                       Джованни да Удине</button>
                   </li>
                   <li class="section-catalog__item-accordeon__desc_item">
@@ -1029,6 +1029,18 @@
             Категории
           </h3>
           <ul aria-label="фильтр изданий книг по категориям" class="section-editions__category-checkbox-list">
+            <!-- <li class="section-editions__category-checbox-item">
+              <input id="best" type="checkbox" name="bestsellers" class="section-editions__category-checbox__input">    
+              <label for="best" class="section-editions__category__label">Бестселлеры</label>
+            </li>
+            <li class="section-editions__category-checbox-item">
+              <input id="best1" type="checkbox" name="bestsellers" class="section-editions__category-checbox__input">    
+              <label for="best1" class="section-editions__category__label">Бестселлеры</label>
+            </li>
+            <li class="section-editions__category-checbox-item">
+              <input id="best2" type="checkbox" name="bestsellers" class="section-editions__category-checbox__input">    
+              <label for="best2" class="section-editions__category__label">Бестселлеры</label>
+            </li> -->
             <li id="edition-check-one" class="section-editions__category-checbox-item">
               <label class="section-editions__category__label">
                 <input type="checkbox" name="bestsellers" class="section-editions__category-checbox__input">
@@ -1518,9 +1530,6 @@
         <div class="map" id="map"></div>
         <div class="container">
           <form aria-label="заказать обратный звонок" class="section-contacts__form">
-            <input type="hidden" name="project_name" value="Blanchard">
-            <input type="hidden" name="admin_email" value="gluxov-1990@mail.ru">
-            <input type="hidden" name="form_subject" value="Form Footer">
             <h3 class="section-contacts__form__title">
               Заказать обратный звонок
             </h3>
@@ -1532,8 +1541,10 @@
               <input name="телефон" aria-label="введите ваш телефон" required type="tel" placeholder="Телефон*"
                 class="section-contacts__form__input section-contacts__form__input_tel" data-validate-field="tel">
             </div>
-            <div id="form_result"></div>
             <button class="section-contacts__form__btn">Заказать</button>
+          </form>
+          <form class="popup-form">
+            <input type="hidden" class="popup-form__text" placeholder="Ошибка при отправке данных">
           </form>
           <h3 class="section-contacts__title">
             Связаться в один клик
