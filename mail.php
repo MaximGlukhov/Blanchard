@@ -1,19 +1,31 @@
 <?php
-/* Здесь проверяется существование переменных */
-if (isset($_POST['name'])) {$phone = $_POST['name'];}
-if (isset($_POST['phone'])) {$name = $_POST['phone'];}
- 
-/* Сюда впишите свою эл. почту */
-$myaddres  = "gluxov-1990@mail.ru"; // кому отправляем
- 
-/* А здесь прописывается текст сообщения, \n - перенос строки */
-$mes = "Тема: Заказ обратного звонка!\nТелефон: $phone\nИмя: $name";
- 
-/* А эта функция как раз занимается отправкой письма на указанный вами email */
-$sub='Заказ'; //сабж
-$email='Заказ обратного звонка'; // от кого
-$send = mail ($myaddres,$sub,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$email");
- 
-ini_set('short_open_tag', 'On');
-header('Refresh: 3; URL=index.html');
+//Для начала проверим есть ли данные в полях name и email, что бы не слать совсем пустые формы :)
+//Если всё в порядке, то работаем дальше
+if (isset($_POST["name"]) && isset($_POST["tel"]) ) { 
+
+//Принимаем данные POST-запроса и записываем значения в переменные
+
+$name = $_POST['name'];
+$phone = $_POST['tel']; 
+
+
+//Теперь давайте настроим куда отправляем и откуда
+
+$my_email = 'maxim.1990.gluhov@gmail.com'; // Куда отправляем
+$sender_email = '<http://ci58450.tmweb.ru/>'; // От кого отправляем
+$title = "Заголовок сообщения"; 
+
+//Сообщение, которое приходит на почту со всеми нужными нам данными:
+
+$mes = "
+ Имя: $name\n
+ Телефон: $tel\n
+";
+
+//Всё, теперь можно отправлять письмо на почту
+
+$send = mail ($my_email,$title,"Content-type:text/plain; charset = utf-8\r\nFrom:$sender_email");
+
+}
+
 ?>
