@@ -31,7 +31,7 @@ new JustValidate('.section-contacts__form', {
   },
   submitHandler: function (form, values, ajax) {
     ajax({
-        url: 'https://just-validate-api.herokuapp.com/submit',
+        url: 'mail.php',
         method: 'POST',
         data: values,
         async: true,
