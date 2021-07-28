@@ -1,0 +1,52 @@
+.popup-form-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 50;
+}
+
+.popup-form {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 50px;
+    border: 1px solid var(--purple);
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.popup-message {
+    color: var(--purple);
+    margin-bottom: 15px;
+}
+
+.popup-form__btn {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--purple);
+    border: 1px solid var(--purple);
+    border-radius: 100px;
+    padding: 10px 20px;
+    transition: color .2s ease, background .2s ease;
+}
+
+.popup-form__btn:hover,
+.popup-form__btn:focus {
+    background-color: var(--purple);
+    color: #fff;
+}
+
+.popup-form__btn:active {
+    box-shadow: 0 0 0 1px #D1A9F0 inset;
+    border-color: #D1A9F0;
+}

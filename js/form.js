@@ -36,6 +36,7 @@ new JustValidate('.section-contacts__form', {
         data: values,
         async: true,
         callback: function (response) {
+      
             alert('Данные отправились успешно')
         },
         error: function (response) {

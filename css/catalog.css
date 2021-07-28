@@ -132,6 +132,11 @@
     padding: 35px 0 18px 0;
 }
 
+.section-catalog__item-accordeon__desc__simplebar {
+    overflow-x: auto;
+    max-height: 288px;
+}
+
 .section-catalog__item-accordeon__desc_list {
     display: flex;
     flex-direction: column;

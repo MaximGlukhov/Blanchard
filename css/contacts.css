@@ -63,6 +63,8 @@
     border: 1px solid #333333;
     border-radius: 100px;
     margin-bottom: 23px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .section-contacts__form__input:hover, .section-contacts__form__input:focus {

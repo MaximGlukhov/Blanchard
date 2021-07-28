@@ -9,11 +9,12 @@ window.addEventListener('DOMContentLoaded', function () {
     })
 
 
-    // document.querySelectorAll(".section-editions__category__label").forEach(item => {
-    //     item.addEventListener("click", function () {
-    //         if (!this.querySelector(".section-editions__category-checbox__input").checked) {
-    //             item.parentElement.classList.remove('edition-spoiler-active');
-    //         }
-    //     })
-    // })
+    document.querySelectorAll(".section-editions__category__label").forEach(el => {
+        el.addEventListener("click", function () {
+            let checkbox = this.querySelector(".section-editions__category-checbox__input");
+            if (checkbox.checked) {
+                this.classList.remove("edition-spoiler-active");
+            }
+        })
+    })
 })

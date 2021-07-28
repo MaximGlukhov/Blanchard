@@ -12,7 +12,10 @@ $phone = $_POST['tel'];
 //Теперь давайте настроим куда отправляем и откуда
 
 $my_email = 'maxim.1990.gluhov@gmail.com'; // Куда отправляем
-$sender_email = '<http://ci58450.tmweb.ru/>'; // От кого отправляем
+$headers = "Content-type: text/html; charset=windows-1251 \r\n";
+$headers .= "From: От кого письмо <http://ci58450.tmweb.ru/>>\r\n";
+$headers .= "Reply-To: reply-to@example.com\r\n";
+$sender_email = ''; // От кого отправляем
 $title = "Заголовок сообщения"; 
 
 //Сообщение, которое приходит на почту со всеми нужными нам данными:
@@ -24,7 +27,7 @@ $mes = "
 
 //Всё, теперь можно отправлять письмо на почту
 
-$send = mail ($my_email,$title,"Content-type:text/plain; charset = utf-8\r\nFrom:$sender_email");
+$send = mail ($my_email,$title,$headers);
 
 }
 
