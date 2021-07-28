@@ -1048,7 +1048,8 @@
             </li>
             <li class="section-editions__category-checbox-item">
               <label for="check3" class="section-editions__category__label">
-                <input id="check3" type="checkbox" name="architecture" class="section-editions__category-checbox__input">
+                <input id="check3" type="checkbox" name="architecture"
+                  class="section-editions__category-checbox__input">
                 <span class="section-editions__category-checbox__icon"></span>
                 <span class="section-editions__category-checbox__text">Архитектура</span>
               </label>
@@ -1522,29 +1523,37 @@
         </div>
         <div class="map" id="map"></div>
         <div class="container">
-          <form aria-label="заказать обратный звонок" class="section-contacts__form">
-            <h3 class="section-contacts__form__title">
-              Заказать обратный звонок
-            </h3>
-            <div class="just-validate-tooltip-container">
-              <input name="name" aria-label="введите ваше имя" required type="text" placeholder="Имя*"
-                class="section-contacts__form__input section-contacts__form__input_name" data-validate-field="name">
-            </div>
-            <div class="just-validate-tooltip-container">
-              <input name="tel" aria-label="введите ваш телефон" required type="tel" placeholder="Телефон*"
-                class="section-contacts__form__input section-contacts__form__input_tel" data-validate-field="tel">
-            </div>
-            <button class="section-contacts__form__btn">Заказать</button>
-          </form>
 
-          <div id="popup-form-container" class="popup-form-container">
-            <form id="popup-form" class="popup-form">
-              <div id="popup-message" class="popup-message">Данные успешно отправлены</div>
-              <div id="popup-message-error" class="popup-message">Ошибка отправки данных</div>
-              <input class="popup-form__btn" type="submit" value="Ok">
-              <input class="popup-form__btn" type="button" name="cancel" value="Отмена">
+            <div class="popup-form-container popup-form-container__send">
+              <form class="popup-form">
+                <div id="popup-message" class="popup-message">Данные успешно отправлены</div>
+                <button class="popup-form__btn">Ok</button>
+              </form>
+            </div>
+            <div class="popup-form-container popup-form-container__error">
+              <form class="popup-form">
+                <div class="popup-message">Ошибка отправки данных</div>
+                <button type="button" class="popup-form__btn">Ok</button>
+              </form>
+            </div>
+
+            <form aria-label="заказать обратный звонок" class="section-contacts__form">
+              <h3 class="section-contacts__form__title">
+                Заказать обратный звонок
+              </h3>
+              <div class="just-validate-tooltip-container">
+                <input name="name" aria-label="введите ваше имя" required type="text" placeholder="Имя*"
+                  class="section-contacts__form__input section-contacts__form__input_name" data-validate-field="name">
+              </div>
+              <div class="just-validate-tooltip-container">
+                <input name="tel" aria-label="введите ваш телефон" required type="tel" placeholder="Телефон*"
+                  class="section-contacts__form__input section-contacts__form__input_tel" data-validate-field="tel">
+              </div>
+              <button class="section-contacts__form__btn">Заказать</button>
             </form>
-          </div>
+          
+
+          
 
           <h3 class="section-contacts__title">
             Связаться в один клик

@@ -36,11 +36,10 @@ new JustValidate('.section-contacts__form', {
         data: values,
         async: true,
         callback: function (response) {
-      
-            alert('Данные отправились успешно')
+          $('.popup-form-container__send').addClass("pop");
         },
         error: function (response) {
-            alert('Ошибка отправки данных')
+          $('.popup-form-container__error').addClass("pop");
         }
     });
 },
@@ -49,3 +48,7 @@ invalidFormCallback: function (errors) {
     console.log(errors);
 },
 });
+
+$(".popup-form__btn").on("click", function() {
+  $('.popup-form-container').removeClass('pop');
+})
