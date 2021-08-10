@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function () {
         el.addEventListener("click", function () {
             let checkbox = this.querySelector(".section-editions__category-checbox__input");
             if (checkbox.checked) {
-                this.classList.remove("edition-spoiler-active");
+                this.parentElement.classList.remove("edition-spoiler-active");
             }
         })
     })

@@ -149,8 +149,6 @@
     width: 40px;
     height: 40px;
     border-radius: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .section-contacts-social:focus, .section-contacts-social:hover {
@@ -161,12 +159,4 @@
 .section-contacts-social:active {
     border: 1px solid var(--purple);
     opacity: 1;
-}
-
-.whatsapp {
-    background-image: url('../img/whatsapp.svg');
-}
-
-.telegram {
-    background-image: url('../img/telegram.svg');
 }

@@ -147,6 +147,7 @@
 .section-catalog__item-accordeon__desc_item {
     max-width: 206px;
     margin-bottom: 14px;
+    margin-right: 14px;
 }
 
 .section-gallery__item-accordeon__desc__btn {
@@ -182,38 +183,46 @@
     font-size: 24px;
     font-weight: 600;
     text-align: left;
-    transition: color .2s ease;
+    transition: all .2s ease;
+}
+
+.section-catalog__item-accordeon__btn__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgba(236, 236, 236, 1);
+}
+
+.section-catalog__item-accordeon__btn__icon__svg {
+    margin-top: 20px;
 }
 
 .ui-accordion-header-icon {
-    display: block;
-    order: 2;
-    min-width: 50px;
-    height: 50px;
-    background-image: url('../img/catalog-accordeon-arrow.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    transition: background .2s ease;
+    display: none;
 }
 
 .ui-state-active {
     border: none;
 }
 
-.ui-state-active>.ui-accordion-header-icon {
-    background-image: url('../img/catalog-accord-arrow-open.png');
+.ui-state-active>.section-catalog__item-accordeon__btn__icon {
+    background-color: rgba(209, 169, 240, 1);
+    box-shadow: 0 0 0 2px #9D5CD0 inset;
 }
 
-.section-catalog__item-accordeon__btn:focus .ui-accordion-header-icon {
-    background-image: url('../img/catalog-accord-arrow-hover.png');
+.ui-state-active>.section-catalog__item-accordeon__btn__icon {
+    transform: rotate(180deg);
 }
 
-.section-catalog__item-accordeon__btn:hover .ui-accordion-header-icon {
-    background-image: url('../img/catalog-accord-arrow-hover.png');
+.section-catalog__item-accordeon__btn:focus .section-catalog__item-accordeon__btn__icon,
+.section-catalog__item-accordeon__btn:hover .section-catalog__item-accordeon__btn__icon {
+    background-color: rgba(209, 169, 240, 1);
 }
 
-.section-catalog__item-accordeon__btn:active .ui-accordion-header-icon {
-    background-image: url('../img/catalog-accord-arrow-active.png');
+.section-catalog__item-accordeon__btn:active .section-catalog__item-accordeon__btn__icon {
+    box-shadow: 0 0 0 2px #9D5CD0 inset;
+    transform: rotate(180deg);
 }
 
 .section-catalog__item-accordeon__btn:hover {
@@ -324,14 +333,34 @@
     background-color: transparent;
 }
 
-.tab-content {
+.lang {
     display: none;
 }
 
-.tab-content-active {
-    display: inline-block;
+.lang-active {
+    display: block;
 }
 
+.tab-content,
+.bel-tab-content, 
+.ita-tab-content,
+.ger-tab-content,
+.fra-tab-content {
+    display: none;
+}
+
+.tab-content-active,
+.bel-tab-content-active,
+.ita-tab-content-active,
+.ger-tab-content-active,
+.fra-tab-content-active {
+    display: block;
+}
+
+.bel-tabs__btn__active,
+.ita-tabs__btn__active,
+.ger-tabs__btn__active,
+.fra-tabs__btn__active,
 .tabs__btn__active {
     color: rgba(121, 67, 164, 1);
 }

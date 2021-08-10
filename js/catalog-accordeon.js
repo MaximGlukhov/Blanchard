@@ -1,4 +1,5 @@
 $( function() {
-    $( "#accordion" ).accordion();
-  } );
+  $(".section-catalog__list-accordeon").accordion();
+} );
+
   

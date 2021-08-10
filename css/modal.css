@@ -43,16 +43,16 @@
     height: 16px;
     right: 20px;
     top: 20px;
-    background-image: url('../img/modal-close.svg');
     z-index: 40;
 }
 
-.modal__btn:hover, .modal__btn:focus {
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z' fill='rgba(157, 92, 208, 1)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z' fill='rgba(157, 92, 208, 1)'/%3E%3C/svg%3E%0A");
+.modal__btn:hover .modal__btn__icon path,
+.modal__btn:focus .modal__btn__icon path {
+    fill: rgba(157, 92, 208, 1);
 }
 
-.modal__btn:active {
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.666885 15.3045L15.3336 0.000275917L16.0002 0.695923L1.33355 16.0002L0.666885 15.3045Z' fill='rgba(121, 67, 164, 1)'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z' fill='rgba(121, 67, 164, 1)'/%3E%3C/svg%3E%0A");
+.modal__btn:active .modal__btn__icon path {
+    fill: rgba(121, 67, 164, 1);
 }
 
 .modal__img {

@@ -34,4 +34,6 @@ window.addEventListener('DOMContentLoaded', function() {
         document.querySelector('#nav-bottom-menu-four').classList.remove('sub-menu-active')
         document.querySelector('#nav-bottom-menu-one').classList.remove('sub-menu-active')
     })
-  })
+})
+
+
