@@ -61,6 +61,7 @@
 
 .section-catalog__desc {
     max-width: 1080px;
+    min-height: 128px;
     font-size: 16px;
     line-height: 32px;
     font-weight: 400;
@@ -79,7 +80,7 @@
 
 .painter__photo {
     margin-bottom: 30px;
-    height: 41%;
+    height: 470px;
     object-fit: cover;
 }
 
@@ -260,7 +261,7 @@
 .section-catalog__item-accordeon__desc_unkown {
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 25px 0;
 }
 
 .section-catalog__item-accordeon__desc_unkown__wrap {
