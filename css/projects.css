@@ -8,10 +8,10 @@
 }
 
 .section-projects__desc {
-    max-width: 1085px;
+    max-width: 1080px;
     font-size: 16px;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: 400;
     color: rgba(51, 51, 51, 1);
     margin-bottom: 23px;
 }

@@ -16,8 +16,7 @@ const gallerySwiper = new Swiper('.section-gallery__swiper', {
       320: {
         slidesPerView: 1,
       },
-   
-   
+    
       577: {
         slidesPerView: 2,
         spaceBetween: 34,

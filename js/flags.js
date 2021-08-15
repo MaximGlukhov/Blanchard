@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.lang').forEach(function(tabContent) {
           $( function() {
             $('.section-catalog__list-accordeon').accordion("refresh");
-          })
+          });
           tabContent.classList.remove('lang-active')
         });
         document.querySelector(`[data-target="${path}"]`).classList.add('lang-active');

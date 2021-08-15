@@ -22,21 +22,51 @@
 }
 
 .section-catalog__item-tabs__btn {
+    position: relative;
     width: 46px;
     height: 46px;
     background-color: transparent;
     border-radius: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
 }
 
-.section-catalog__item-tabs__btn:hover, .section-catalog__item-tabs__btn:focus {
+.section-catalog__item-tabs__btn:hover::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     outline: none;
     box-shadow: 0 0 20px 0 rgba(157, 92, 208, 0.7);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.section-catalog__item-tabs__btn:focus::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 rgba(157, 92, 208, 0.7);
+    z-index: -1;
 }
 
 .section-catalog__item-tabs__btn:active {
     box-shadow: 0 0 0 2px rgba(157, 92, 208, 0.7);
+}
+
+.section-catalog__item-tabs__btn:active.section-catalog__item-tabs__btn:focus::after {
+    box-shadow: none;
+}
+
+.tabs-flag-active {
+    box-shadow: 0 0 0 10px white, 0 0 0 12px rgba(121, 67, 164, 1);
 }
 
 .section-catalog__item-tabs__btn__france {
@@ -226,18 +256,22 @@
     transform: rotate(180deg);
 }
 
-.section-catalog__item-accordeon__btn:hover {
-    color: rgba(157, 92, 208, 1);
-    border-color: rgba(157, 92, 208, 1);
-}
-
 .section-catalog__item-accordeon__btn:focus {
     outline: none;
     color: white;
 }
 
+.section-catalog__item-accordeon__btn:hover {
+    color: rgba(157, 92, 208, 1);
+    border-color: rgba(157, 92, 208, 1);
+}
+
 .section-catalog__item-accordeon__btn:focus .section-catalog__item-accordeon__btn__text {
     background-color: rgba(157, 92, 208, 1);
+}
+
+.section-catalog__item-accordeon__btn:hover .section-catalog__item-accordeon__btn__text {
+    background-color: transparent;
 }
 
 .section-catalog__item-accordeon__btn:active .section-catalog__item-accordeon__btn__text {
@@ -366,6 +400,3 @@
     color: rgba(121, 67, 164, 1);
 }
 
-.tabs-flag-active {
-    box-shadow: 0 0 0 10px white, 0 0 0 12px rgba(121, 67, 164, 1);
-}

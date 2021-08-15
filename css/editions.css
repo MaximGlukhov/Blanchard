@@ -158,22 +158,34 @@
     outline: none;
     color: rgba(255, 255, 255, 1);
     transition: background .2s ease;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.section-editions__price__input:hover, .section-editions__price__input:focus {
+.section-editions__price__input:focus {
     background-color: rgba(157, 92, 208, 1);
+    outline: 1px solid rgba(255, 255, 255, 1);
+}
+
+.section-editions__price__input:hover {
+    background-color: rgba(157, 92, 208, 1);
+    outline: none;
 }
 
 .section-editions__price__input:active {
     background-color: rgba(121, 67, 164, 1);
+    outline: none;
 }
 
 .section-editions__price__input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 1);
+    background: none;
 }
 
 .section-editions__price__input::-moz-placeholder {
     color: rgba(255, 255, 255, 1);
+    background: 0;
 }
 
 .section-editions__price__input:-ms-input-placeholder {
@@ -247,7 +259,7 @@
 }
 
 .section-editions__swiper-container {
-    max-width: 1150px;
+    max-width: 1164px;
     height: 100%;
 }
 
@@ -289,6 +301,7 @@
 }
 
 .edition__btn {
+    position: relative;
     padding: 8px 19px;
     font-size: 16px;
     font-weight: 700;
@@ -296,11 +309,21 @@
     border: 2px solid #9D5CD0;
     border-radius: 100px;
     transition: color .2s ease;
+    z-index: 1;
+    margin-left: 5px;
+    margin-bottom: 7px;
 }
 
-.edition__btn:focus {
-    outline: none;
-    border: 4px double #9D5CD0;
+.edition__btn:focus::after {
+    position: absolute;
+    content: '';
+    top: -7px;
+    bottom: -7px;
+    right: -7px;
+    left: -7px;
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
+    z-index: -1;
 }
 
 .edition__btn:hover {
@@ -308,11 +331,19 @@
     color: rgba(255, 255, 255, 1);
 }
 
+.edition__btn:hover.edition__btn:focus::after {
+    border: 0;
+}
+
 .edition__btn:active {
     background-color: rgba(121, 67, 164, 1);
     color: #fff;
     border: 2px solid #D1A9F0;
     box-shadow: 0 0 0 1px #D1A9F0 inset;
+}
+
+.edition__btn:active.edition__btn:focus::after {
+    border: 0;
 }
 
 .section-edition__right-wrap__mob-list {
