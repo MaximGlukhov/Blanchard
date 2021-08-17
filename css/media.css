@@ -54,9 +54,6 @@
     .painter__photo {
         height: 400px;
     }
-    .section-catalog__item-accordeon__desc__simplebar {
-        max-height: 384px;
-    }
     .section-catalog__item-accordeon__desc_list {
         max-height: 384px;
     }
@@ -542,9 +539,6 @@
     .section-catalog__item-accordeon__desc_unkown {
         padding: 25px 0;
     }
-    .section-catalog__item-accordeon__desc__simplebar {
-        max-height: 288px;
-    }
     .section-catalog__item-accordeon__desc_list {
         max-height: 288px;
     }
@@ -941,9 +935,6 @@
     }
     .section-catalog__heading {
         margin-right: 0;
-    }
-    .section-catalog__item-accordeon__desc__simplebar {
-        max-height: none;
     }
     .section-catalog__item-accordeon__desc_list {
         max-height: none;
