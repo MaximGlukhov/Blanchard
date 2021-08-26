@@ -352,40 +352,6 @@
     .section-projects__slide-wrap {
         height: 128px;
     }
-    .projects-workhouse {
-        width: 229px;
-        height: 54px;
-    }
-    .projects-freelands {
-        width: 210px;
-        height: 52px;
-    }
-    .projects-institute {
-        height: 49px;
-    }
-    .projects-1849 {
-        width: 105px;
-        height: 72px;
-    }
-    .projects-camden {
-        width: 215px;
-        height: 60px;
-    }
-    .projects-watts {
-        width: 158px;
-        height: 69px;
-    }
-    .projects-hiscox {
-        width: 148px;
-        height: 73px;
-    }
-    .projects-stassen {
-        height: 59px;
-    }
-    .projects-esad {
-        width: 196px;
-        height: 53px;
-    }
     .section-contacts__heading {
         margin-bottom: 25px;
     }
@@ -644,40 +610,6 @@
     }
     .section-projects__slide-wrap {
         height: 106px;
-    }
-    .projects-workhouse {
-        width: 195px;
-        height: 45px;
-    }
-    .projects-freelands {
-        width: 210px;
-        height: 52px;
-    }
-    .projects-institute {
-        height: 38px;
-    }
-    .projects-1849 {
-        width: 105px;
-        height: 72px;
-    }
-    .projects-camden {
-        width: 176px;
-        height: 48px;
-    }
-    .projects-watts {
-        width: 143px;
-        height: 62px;
-    }
-    .projects-hiscox {
-        width: 121px;
-        height: 59px;
-    }
-    .projects-stassen {
-        height: 47px;
-    }
-    .projects-esad {
-        width: 182px;
-        height: 49px;
     }
     .section-projects__subtitle {
         margin-bottom: 30px;
@@ -1145,42 +1077,6 @@
     }
     .section-projects__slide-wrap {
         height: 65px;
-    }
-    .projects-workhouse {
-        width: 117px;
-        height: 27px;
-    }
-    .projects-freelands {
-        width: 105px;
-        height: 26px;
-    }
-    .projects-institute {
-        width: 141px;
-        height: 24px;
-    }
-    .projects-1849 {
-        width: 53px;
-        height: 37px;
-    }
-    .projects-camden {
-        width: 109px;
-        height: 30px;
-    }
-    .projects-watts {
-        width: 80px;
-        height: 35px;
-    }
-    .projects-hiscox {
-        width: 75px;
-        height: 37px;
-    }
-    .projects-stassen {
-        width: 124px;
-        height: 30px;
-    }
-    .projects-esad {
-        width: 99px;
-        height: 27px;
     }
     .section-projects {
         padding-top: 50px;

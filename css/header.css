@@ -225,7 +225,7 @@
 }
 
 .header__nav-bottom__item__btn.btn-active>.header__nav-bottom__item__btn__icon {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(-3px);
 }
 
 .header__nav-bottom__item__btn:active .header__nav-bottom__item__btn__icon path {

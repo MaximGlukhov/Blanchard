@@ -99,6 +99,8 @@
 }
 
 .section-projects__slide-img {
+    max-width: 60%;
+    max-height: 50%;
     margin-left: auto;
     margin-right: auto;
     -webkit-filter: grayscale(1);
@@ -120,51 +122,6 @@
     -webkit-filter: none;
     filter: none;
     box-shadow: 0 0 0 1px #9D5CD0 inset;
-}
-
-.projects-workhouse {
-    width: 229px;
-    height: 53px;
-}
-
-.projects-freelands {
-    width: 244px;
-    height: 63px;
-}
-
-.projects-institute {
-    width: 73.33333%;
-    height: 59px;
-}
-
-.projects-1849 {
-    width: 123px;
-    height: 85px;
-}
-
-.projects-camden {
-    width: 252px;
-    height: 70px;
-}
-
-.projects-watts {
-    width: 185px;
-    height: 81px;
-}
-
-.projects-hiscox {
-    width: 173px;
-    height: 85px;
-}
-
-.projects-stassen {
-    width: 63.55555%;
-    height: 69px;
-}
-
-.projects-esad {
-    width: 229px;
-    height: 62px;
 }
 
 .projects__slider__btn {
@@ -205,6 +162,7 @@
 .section-projects-button-prev.swiper-button-disabled,
 .section-projects-button-next.swiper-button-disabled {
     opacity: .5;
+    pointer-events: none;
 }
 
 

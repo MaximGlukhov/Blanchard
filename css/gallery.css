@@ -176,6 +176,7 @@
 .gallery-swiper-button-prev-new.swiper-button-disabled,
 .gallery-swiper-button-next-new.swiper-button-disabled {
     opacity: .5;
+    pointer-events: none;
 }
 
 .section-gallery__panigation {
@@ -210,11 +211,17 @@
     background-size: 81px 79px;
     background-repeat: no-repeat;
     background-position: center center;
+    transition: all .2s ease;
 }
 
 .section-gallery__img {
     position: relative;
     height: 100%;
+    transition: all .2s ease;
+}
+
+.section-gallery__img::before {
+    transition: all .2s ease;
 }
 
 .section-gallery__img:hover.section-gallery__img::before {
@@ -228,6 +235,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 85% 85%;
+    transition: all .2s ease;
 }
 
 .section-gallery__img:active.section-gallery__img::before {
