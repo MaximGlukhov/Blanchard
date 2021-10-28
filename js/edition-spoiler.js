@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll(".section-editions__category__label").forEach(item => {
             item.parentElement.classList.toggle('edition-spoiler-active');
             if (item.querySelector(".section-editions__category-checbox__input").checked) {
-                item.parentElement.classList.add('edition-spoiler-active');
+                item.parentElement.classList.add('long');
             }
         })
     })
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function () {
         el.addEventListener("click", function () {
             let checkbox = this.querySelector(".section-editions__category-checbox__input");
             if (checkbox.checked) {
-                this.parentElement.classList.remove("edition-spoiler-active");
+                this.parentElement.classList.remove("long");
             }
         })
     })

@@ -987,6 +987,9 @@
     .section-editions__category-checbox-item.edition-spoiler-active {
         display: block;
     }
+    .section-editions__category-checbox-item.long {
+        display: block;
+    }
     .section-editions__category__label {
         position: static;
     }
