@@ -56,15 +56,15 @@
 }
 
 .hero-slider__slide-one {
-  background: url('../img/hero.png');
+  background: url('../img/hero.webp');
 }
 
 .hero-slider__slide-two {
-  background: url('../img/hero-2.png');
+  background: url('../img/hero-2.webp');
 }
 
 .hero-slider__slide-three {
-  background: url('../img/hero-3.png');
+  background: url('../img/hero-3.webp');
 }
 
 .section-hero__box {
