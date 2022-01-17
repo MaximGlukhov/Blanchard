@@ -1,3 +1,3 @@
 # Blanchard
-Skillbox thesis - course Web layout "Basic level"
+Adaptive landing
 https://maximglukhov.github.io/Blanchard/
